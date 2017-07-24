@@ -1369,6 +1369,22 @@ a.link-button-with-advice {
     padding-right: 6px;
     padding-right: 10px; }
 
+.search-suggestion {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 12px;
+  line-height: 1.25;
+  font-size: 14px;
+  line-height: 1.42857;
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 1.14286;
+  font-size: 16px;
+  line-height: 1.25; }
+
 html,
 body,
 div,

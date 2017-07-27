@@ -1239,6 +1239,9 @@ a.summary-item-remove-link {
       text-transform: none;
       font-size: 14px;
       line-height: 1.14286;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
       padding: 7px 0 7px 35px;
       border-bottom: 1px solid #bfc1c3;
       width: 100%;
@@ -1247,10 +1250,6 @@ a.summary-item-remove-link {
         .govuk-option-select .options-container label {
           font-size: 16px;
           line-height: 1.25; } }
-      @media (min-width: 769px) {
-        .govuk-option-select .options-container label {
-          /* leave room for the scroll bars on desktop*/
-          width: 90%; } }
       .govuk-option-select .options-container label:hover {
         background-color: #f8f8f8; }
     .govuk-option-select .options-container input {

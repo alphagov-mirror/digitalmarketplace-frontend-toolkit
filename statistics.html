@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang=""><![endif]-->
+<!--[if gt IE 8]><!--><html lang=""><!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <title>Statistics - Digital Marketplace frontend toolkit</title>
+
+    <!--[if gt IE 8]><!--><link href="govuk_template/assets/stylesheets/govuk-template.css?0.19.2" media="screen" rel="stylesheet" /><!--<![endif]-->
+    <!--[if IE 6]><link href="govuk_template/assets/stylesheets/govuk-template-ie6.css?0.19.2" media="screen" rel="stylesheet" /><![endif]-->
+    <!--[if IE 7]><link href="govuk_template/assets/stylesheets/govuk-template-ie7.css?0.19.2" media="screen" rel="stylesheet" /><![endif]-->
+    <!--[if IE 8]><link href="govuk_template/assets/stylesheets/govuk-template-ie8.css?0.19.2" media="screen" rel="stylesheet" /><![endif]-->
+    <link href="govuk_template/assets/stylesheets/govuk-template-print.css?0.19.2" media="print" rel="stylesheet" />
+
+    <!--[if IE 8]><link href="govuk_template/assets/stylesheets/fonts-ie8.css?0.19.2" media="all" rel="stylesheet" /><![endif]-->
+    <!--[if gte IE 9]><!--><link href="govuk_template/assets/stylesheets/fonts.css?0.19.2" media="all" rel="stylesheet" /><!--<![endif]-->
+    <!--[if lt IE 9]><script src="govuk_template/assets/javascripts/ie.js?0.19.2"></script><![endif]-->
+
+    <link rel="shortcut icon" href="govuk_template/assets/images/favicon.ico?0.19.2" type="image/x-icon" />
+    <link rel="mask-icon" href="govuk_template/assets/images/gov.uk_logotype_crown.svg?0.19.2" color="#0b0c0c">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="govuk_template/assets/images/apple-touch-icon-152x152.png?0.19.2">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="govuk_template/assets/images/apple-touch-icon-120x120.png?0.19.2">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="govuk_template/assets/images/apple-touch-icon-76x76.png?0.19.2">
+    <link rel="apple-touch-icon-precomposed" href="govuk_template/assets/images/apple-touch-icon-60x60.png?0.19.2">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="govuk_template/assets/images/opengraph-image.png?0.19.2">
+
+    <!--[if !IE]><!-->
+<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index.css "/>
+<!--<![endif]-->
+<!--[if IE 6]>
+<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie6.css "/>
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie7.css "/>
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie8.css "/>
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie9.css "/>
+<![endif]-->
+
+  </head>
+
+  <body class="">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink"></a>
+      </div>
+    </div>
+
+    <div id="global-cookie-message">
+      
+        
+      
+    </div>
+
+    
+    <header role="banner" id="global-header" class="">
+      <div class="header-wrapper">
+        <div class="header-global">
+          <div class="header-logo">
+            <a href="" title="" id="logo" class="content">
+              <img src="govuk_template/assets/images/gov.uk_logotype_crown_invert_trans.png?0.19.2" width="36" height="32" alt=""> 
+            </a>
+          </div>
+          
+        </div>
+        
+      </div>
+    </header>
+    
+
+    
+
+    <div id="global-header-bar"></div>
+
+    <div id="global-breadcrumb" class="header-context">
+  <nav>
+    <ol class="group" role="breadcrumbs">
+      <li>
+        <a href="/digitalmarketplace-frontend-toolkit/">Home</a>
+      </li>
+    </ol>
+  </nav>
+</div>
+<main role="main" id="content" class="wrapper">
+    <div id="wrapper">
+        <header class="page-heading">
+            <h1>Statistics</h1>
+        </header>
+        <div class="grid-row">
+            <div class="page-description column-two-thirds">
+                Macros for displaying statistical data. For now the only macro is big statistic, used to prominently display key statistics.
+            </div>
+        </div>
+        <div class="grid-row">
+            <div class="column-one-whole">
+            
+            
+<div class="statistic-container" id="started-applications">
+    <h3 class="visually-hidden">Started applications</h3>
+    <div class="big-statistic">12</div>
+    <div class="statistic-name">Started applications</div>
+  </div>
+<div class="statistic-container" id="completed-applications">
+    <h3 class="visually-hidden">Completed applications</h3>
+    <div class="big-statistic">1</div>
+    <div class="statistic-name">Completed applications</div>
+  </div>
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;statistics.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">statistics</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{{</span> <span style="color: #19177C">statistics.big_stat</span><span style="color: #666666">(12,</span> <span style="color: #BA2121">&quot;Started applications&quot;</span><span style="color: #666666">,</span> <span style="color: #19177C">id</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;started-applications&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+<span style="color: #BC7A00">{{</span> <span style="color: #19177C">statistics.big_stat</span><span style="color: #666666">(1,</span> <span style="color: #BA2121">&quot;Completed applications&quot;</span><span style="color: #666666">,</span> <span style="color: #19177C">id</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;completed-applications&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;statistic-container&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;started-applications&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;h3</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visually-hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Started applications<span style="color: #008000; font-weight: bold">&lt;/h3&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;big-statistic&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>12<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;statistic-name&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Started applications<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;statistic-container&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;completed-applications&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;h3</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visually-hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Completed applications<span style="color: #008000; font-weight: bold">&lt;/h3&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;big-statistic&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>1<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;statistic-name&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Completed applications<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+    </div>
+</main>
+
+
+    <footer class="group js-footer" id="footer" role="contentinfo">
+
+      <div class="footer-wrapper">
+        
+
+        <div class="footer-meta">
+          <div class="footer-meta-inner">
+            
+
+            <div class="open-government-licence">
+              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
+              
+                
+              
+            </div>
+          </div>
+
+          <div class="copyright">
+            <a href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+    <script src="govuk_template/assets/javascripts/govuk-template.js?0.19.2"></script>
+
+    <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/vendor/jquery-1.11.0.js"></script>
+
+<script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/onready.js"></script>
+
+
+    
+    <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+  </body>
+</html>

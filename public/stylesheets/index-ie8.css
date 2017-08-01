@@ -1201,6 +1201,45 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
   .service-id-chunk:first-child {
     padding-left: 0; }
 
+.statistic-container .big-statistic, .statistic-container .statistic-name {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 12px;
+  line-height: 1.25;
+  font-size: 14px;
+  line-height: 1.42857;
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 1.14286;
+  font-size: 16px;
+  line-height: 1.25;
+  padding-right: 10px; }
+
+.statistic-container {
+  display: -moz-inline-stack;
+  display: inline-block;
+  padding-right: 7em;
+  padding-bottom: 3em; }
+  .statistic-container .big-statistic {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 24px;
+    line-height: 1.04167;
+    font-size: 36px;
+    line-height: 1.11111; }
+  .statistic-container .statistic-name {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25;
+    font-size: 19px;
+    line-height: 1.31579; }
+
 .link-button,
 a.link-button, .link-button-with-advice,
 a.link-button-with-advice {

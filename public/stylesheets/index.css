@@ -1319,36 +1319,37 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
   .service-id-chunk:first-child {
     padding-left: 0; }
 
-.statistic-container .big-statistic, .statistic-container .statistic-name {
+.statistic-container .big-statistic, .statistic-container .statistic-name, .statistic-container .statistic-description {
   font-family: "nta", Arial, sans-serif;
   font-weight: 400;
   text-transform: none;
   font-size: 12px;
   line-height: 1.25; }
   @media (min-width: 641px) {
-    .statistic-container .big-statistic, .statistic-container .statistic-name {
+    .statistic-container .big-statistic, .statistic-container .statistic-name, .statistic-container .statistic-description {
       font-size: 14px;
       line-height: 1.42857; } }
   @media (min-width: 641px) {
-    .statistic-container .big-statistic, .statistic-container .statistic-name {
+    .statistic-container .big-statistic, .statistic-container .statistic-name, .statistic-container .statistic-description {
       font-family: "nta", Arial, sans-serif;
       font-weight: 400;
       text-transform: none;
       font-size: 14px;
       line-height: 1.14286; } }
   @media (min-width: 641px) and (min-width: 641px) {
-    .statistic-container .big-statistic, .statistic-container .statistic-name {
+    .statistic-container .big-statistic, .statistic-container .statistic-name, .statistic-container .statistic-description {
       font-size: 16px;
       line-height: 1.25; } }
   @media (min-width: 641px) {
-    .statistic-container .big-statistic, .statistic-container .statistic-name {
+    .statistic-container .big-statistic, .statistic-container .statistic-name, .statistic-container .statistic-description {
       padding-right: 10px; } }
 
 .statistic-container {
   display: -moz-inline-stack;
   display: inline-block;
   padding-right: 7em;
-  padding-bottom: 3em; }
+  padding-bottom: 3em;
+  vertical-align: top; }
   @media (max-width: 640px) {
     .statistic-container {
       padding-bottom: 1em; } }

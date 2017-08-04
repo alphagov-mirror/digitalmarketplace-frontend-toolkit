@@ -108,11 +108,13 @@
     <h3 class="visually-hidden">Started applications</h3>
     <div class="big-statistic">12</div>
     <div class="statistic-name">Started applications</div>
+    
   </div>
 <div class="statistic-container" id="completed-applications">
     <h3 class="visually-hidden">Completed applications</h3>
     <div class="big-statistic">1</div>
     <div class="statistic-name">Completed applications</div>
+    
   </div>
             </div>
         </div>
@@ -125,11 +127,58 @@
     <span style="color: #008000; font-weight: bold">&lt;h3</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visually-hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Started applications<span style="color: #008000; font-weight: bold">&lt;/h3&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;big-statistic&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>12<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;statistic-name&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Started applications<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;statistic-container&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;completed-applications&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;h3</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visually-hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Completed applications<span style="color: #008000; font-weight: bold">&lt;/h3&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;big-statistic&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>1<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;statistic-name&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Completed applications<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+        <div class="grid-row">
+            <div class="column-one-whole">
+            
+            
+<div class="statistic-container" id="started-applications">
+    <h3 class="visually-hidden">Started applications</h3>
+    <div class="big-statistic">12</div>
+    <div class="statistic-name">Started applications</div>
+    
+      <div class="statistic-description">12 SME, 2 large</div>
+    
+  </div>
+<div class="statistic-container" id="completed-applications">
+    <h3 class="visually-hidden">Completed applications</h3>
+    <div class="big-statistic">1</div>
+    <div class="statistic-name">Completed applications</div>
+    
+      <div class="statistic-description">2 SME, 0 large</div>
+    
+  </div>
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;statistics.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">statistics</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{{</span> <span style="color: #19177C">statistics.big_stat</span><span style="color: #666666">(12,</span> <span style="color: #BA2121">&quot;Started applications&quot;</span><span style="color: #666666">,</span> <span style="color: #19177C">stat_description</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;12 SME, 2 large&quot;</span><span style="color: #666666">,</span> <span style="color: #19177C">id</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;started-applications&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+<span style="color: #BC7A00">{{</span> <span style="color: #19177C">statistics.big_stat</span><span style="color: #666666">(1,</span> <span style="color: #BA2121">&quot;Completed applications&quot;</span><span style="color: #666666">,</span> <span style="color: #19177C">stat_description</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;2 SME, 0 large&quot;</span><span style="color: #666666">,</span> <span style="color: #19177C">id</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;completed-applications&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;statistic-container&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;started-applications&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;h3</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visually-hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Started applications<span style="color: #008000; font-weight: bold">&lt;/h3&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;big-statistic&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>12<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;statistic-name&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Started applications<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;statistic-description&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>12 SME, 2 large<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;statistic-container&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;completed-applications&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;h3</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visually-hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Completed applications<span style="color: #008000; font-weight: bold">&lt;/h3&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;big-statistic&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>1<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;statistic-name&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Completed applications<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;statistic-description&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>2 SME, 0 large<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>

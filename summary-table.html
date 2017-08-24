@@ -226,7 +226,7 @@
     <span style="color: #666666">{</span><span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Service 2&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;lot&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;IaaS&quot;</span><span style="color: #666666">},</span>
   <span style="color: #666666">],</span>
   <span style="color: #19177C">caption</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Summary table&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">empty_message</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;You haven&#39;t submited any services yet&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">empty_message</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;You haven&#39;t submitted any services yet&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">field_headings</span><span style="color: #666666">=[</span>
     <span style="color: #BA2121">&quot;Service&quot;</span><span style="color: #666666">,</span>
     <span style="color: #BA2121">&quot;Lot&quot;</span><span style="color: #666666">,</span>
@@ -366,7 +366,7 @@
   </h2>
 
     <p class="summary-item-no-content">
-      You haven't submited any services yet
+      You haven't submitted any services yet
     </p>
   
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
@@ -374,7 +374,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
   <span style="color: #666666">[],</span>
   <span style="color: #19177C">caption</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Summary table with no entries&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">empty_message</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;You haven&#39;t submited any services yet&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">empty_message</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;You haven&#39;t submitted any services yet&quot;</span><span style="color: #666666">,</span>
 <span style="color: #666666">)</span> <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span> <span style="color: #19177C">summary.row</span><span style="color: #666666">()</span> <span style="color: #BC7A00">%}</span>
     <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.service_link</span><span style="color: #666666">(</span><span style="color: #19177C">item.name</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;#&#39;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
@@ -390,7 +390,7 @@
   <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
 
     <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-no-content&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-      You haven&#39;t submited any services yet
+      You haven&#39;t submitted any services yet
     <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
   
 </pre></div>
@@ -628,7 +628,7 @@
     <span style="color: #666666">{</span><span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Service 2&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;lot&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;IaaS&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;id&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;9012123456783456&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;date&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;12 June 2015&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;framework&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;G-Cloud 6&quot;</span><span style="color: #666666">},</span>
   <span style="color: #666666">],</span>
   <span style="color: #19177C">caption</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Summary table with many columns&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">empty_message</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;You haven&#39;t submited any services yet&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">empty_message</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;You haven&#39;t submitted any services yet&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">field_headings</span><span style="color: #666666">=[</span>
     <span style="color: #BA2121">&quot;Service&quot;</span><span style="color: #666666">,</span>
     <span style="color: #BA2121">&quot;ID&quot;</span><span style="color: #666666">,</span>
@@ -1140,7 +1140,7 @@
   </p>
 
     <p class="summary-item-no-content">
-      You haven't submited any services yet
+      You haven't submitted any services yet
     </p>
   
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
@@ -1150,7 +1150,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
   <span style="color: #666666">[],</span>
   <span style="color: #19177C">caption</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Summary table with top-level action&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">empty_message</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;You haven&#39;t submited any services yet&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">empty_message</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;You haven&#39;t submitted any services yet&quot;</span><span style="color: #666666">,</span>
 <span style="color: #666666">)</span> <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span> <span style="color: #19177C">summary.row</span><span style="color: #666666">()</span> <span style="color: #BC7A00">%}</span>
     <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.service_link</span><span style="color: #666666">(</span><span style="color: #19177C">item.name</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;#&#39;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
@@ -1172,7 +1172,7 @@
   <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
 
     <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-no-content&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-      You haven&#39;t submited any services yet
+      You haven&#39;t submitted any services yet
     <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
   
 </pre></div>
@@ -1187,7 +1187,7 @@
   </h2>
 
     <p class="summary-item-no-content">
-      You haven't submited any services yet
+      You haven't submitted any services yet
     </p>
   
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
@@ -1195,7 +1195,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
   <span style="color: #666666">[],</span>
   <span style="color: #19177C">caption</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Summary table with number&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">empty_message</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;You haven&#39;t submited any services yet&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">empty_message</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;You haven&#39;t submitted any services yet&quot;</span><span style="color: #666666">,</span>
 <span style="color: #666666">)</span> <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span> <span style="color: #19177C">summary.row</span><span style="color: #666666">()</span> <span style="color: #BC7A00">%}</span>
     <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.service_link</span><span style="color: #666666">(</span><span style="color: #19177C">item.name</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;#&#39;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
@@ -1213,7 +1213,7 @@
   <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
 
     <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-no-content&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-      You haven&#39;t submited any services yet
+      You haven&#39;t submitted any services yet
     <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
   
 </pre></div>
@@ -1343,7 +1343,7 @@
     <span style="color: #666666">{</span><span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Service 2&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;lot&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;IaaS&quot;</span><span style="color: #666666">},</span>
   <span style="color: #666666">],</span>
   <span style="color: #19177C">caption</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Summary table with name field as link&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">empty_message</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;You haven&#39;t submited any services yet&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">empty_message</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;You haven&#39;t submitted any services yet&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">field_headings</span><span style="color: #666666">=[</span>
     <span style="color: #BA2121">&quot;Service&quot;</span><span style="color: #666666">,</span>
     <span style="color: #BA2121">&quot;Lot&quot;</span><span style="color: #666666">,</span>
@@ -1609,7 +1609,7 @@
     <span style="color: #666666">{</span><span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Service 2&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;lot&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;IaaS&quot;</span><span style="color: #666666">},</span>
   <span style="color: #666666">],</span>
   <span style="color: #19177C">caption</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Summary table with name field as link&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">empty_message</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;You haven&#39;t submited any services yet&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">empty_message</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;You haven&#39;t submitted any services yet&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">field_headings</span><span style="color: #666666">=[</span>
     <span style="color: #BA2121">&quot;Service&quot;</span><span style="color: #666666">,</span>
     <span style="color: #BA2121">&quot;Lot&quot;</span><span style="color: #666666">,</span>
@@ -2805,7 +2805,7 @@
     <span style="color: #666666">(</span><span style="color: #BA2121">&quot;Features&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Answer required&quot;</span><span style="color: #666666">),</span>
   <span style="color: #666666">],</span>
   <span style="color: #19177C">caption</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Summary table with incomplete entry&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">empty_message</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;You haven&#39;t submited any services yet&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">empty_message</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;You haven&#39;t submitted any services yet&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">field_headings</span><span style="color: #666666">=[</span>
     <span style="color: #BA2121">&quot;Field name&quot;</span><span style="color: #666666">,</span>
     <span style="color: #BA2121">&quot;Field value&quot;</span><span style="color: #666666">,</span>

@@ -1,0 +1,462 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang=""><![endif]-->
+<!--[if gt IE 8]><!--><html lang=""><!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <title>Page header - Digital Marketplace frontend toolkit</title>
+
+    <!--[if gt IE 8]><!--><link href="govuk_template/assets/stylesheets/govuk-template.css?0.19.2" media="screen" rel="stylesheet" /><!--<![endif]-->
+    <!--[if IE 6]><link href="govuk_template/assets/stylesheets/govuk-template-ie6.css?0.19.2" media="screen" rel="stylesheet" /><![endif]-->
+    <!--[if IE 7]><link href="govuk_template/assets/stylesheets/govuk-template-ie7.css?0.19.2" media="screen" rel="stylesheet" /><![endif]-->
+    <!--[if IE 8]><link href="govuk_template/assets/stylesheets/govuk-template-ie8.css?0.19.2" media="screen" rel="stylesheet" /><![endif]-->
+    <link href="govuk_template/assets/stylesheets/govuk-template-print.css?0.19.2" media="print" rel="stylesheet" />
+
+    <!--[if IE 8]><link href="govuk_template/assets/stylesheets/fonts-ie8.css?0.19.2" media="all" rel="stylesheet" /><![endif]-->
+    <!--[if gte IE 9]><!--><link href="govuk_template/assets/stylesheets/fonts.css?0.19.2" media="all" rel="stylesheet" /><!--<![endif]-->
+    <!--[if lt IE 9]><script src="govuk_template/assets/javascripts/ie.js?0.19.2"></script><![endif]-->
+
+    <link rel="shortcut icon" href="govuk_template/assets/images/favicon.ico?0.19.2" type="image/x-icon" />
+    <link rel="mask-icon" href="govuk_template/assets/images/gov.uk_logotype_crown.svg?0.19.2" color="#0b0c0c">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="govuk_template/assets/images/apple-touch-icon-152x152.png?0.19.2">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="govuk_template/assets/images/apple-touch-icon-120x120.png?0.19.2">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="govuk_template/assets/images/apple-touch-icon-76x76.png?0.19.2">
+    <link rel="apple-touch-icon-precomposed" href="govuk_template/assets/images/apple-touch-icon-60x60.png?0.19.2">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="govuk_template/assets/images/opengraph-image.png?0.19.2">
+
+    <!--[if !IE]><!-->
+<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index.css "/>
+<!--<![endif]-->
+<!--[if IE 6]>
+<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie6.css "/>
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie7.css "/>
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie8.css "/>
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie9.css "/>
+<![endif]-->
+
+  </head>
+
+  <body class="">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink"></a>
+      </div>
+    </div>
+
+    <div id="global-cookie-message">
+      
+        
+      
+    </div>
+
+    
+    <header role="banner" id="global-header" class="">
+      <div class="header-wrapper">
+        <div class="header-global">
+          <div class="header-logo">
+            <a href="" title="" id="logo" class="content">
+              <img src="govuk_template/assets/images/gov.uk_logotype_crown_invert_trans.png?0.19.2" width="36" height="32" alt=""> 
+            </a>
+          </div>
+          
+        </div>
+        
+      </div>
+    </header>
+    
+
+    
+
+    <div id="global-header-bar"></div>
+
+    <div id="global-breadcrumb" class="header-context">
+  <nav>
+    <ol class="group" role="breadcrumbs">
+      <li>
+        <a href="/digitalmarketplace-frontend-toolkit/">Home</a>
+      </li>
+    </ol>
+  </nav>
+</div>
+<main role="main" id="content" class="wrapper">
+    <div id="wrapper">
+        <header class="page-heading">
+            <h1>Page header</h1>
+        </header>
+            
+            
+<header role="banner" id="global-header" class="">
+  <div class="header-wrapper">
+    <div class="header-global">
+      <div class="header-logo">
+        <a href="#" title="" id="logo" class="content"></a>
+      </div>
+    </div>
+    
+      <div class="header-proposition">
+  <div class="content">
+    <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+    <nav id="proposition-menu">
+      <a href="/" id="proposition-name">Digital Marketplace</a>
+      <ul id="proposition-links">
+        
+          <li><a href="/user/login">Log in</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</div>
+    
+  </div>
+</header>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">set</span> <span style="color: #19177C">csrf_token_value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;token_set_for_documentation_only&#39;</span> <span style="color: #BC7A00">%}</span>
+&lt;header role=&quot;banner&quot; id=&quot;global-header&quot; class=&quot;&quot;&gt;
+  &lt;div class=&quot;header-wrapper&quot;&gt;
+    &lt;div class=&quot;header-global&quot;&gt;
+      &lt;div class=&quot;header-logo&quot;&gt;
+        &lt;a href=&quot;#&quot; title=&quot;&quot; id=&quot;logo&quot; class=&quot;content&quot;&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">with</span> <span style="color: #19177C">logged_in</span><span style="color: #666666">=</span><span style="color: #008000">False</span> <span style="color: #BC7A00">%}</span>
+      <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;proposition-header.html&quot;</span> <span style="color: #BC7A00">%}</span>
+    <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+  &lt;/div&gt;
+&lt;/header&gt;
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;header</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;banner&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;global-header&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-global&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-logo&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">title=</span><span style="color: #BA2121">&quot;&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;logo&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;content&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/a&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-proposition&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;content&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#proposition-links&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;js-header-toggle menu&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Menu<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;nav</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;proposition-menu&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;/&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;proposition-name&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Digital Marketplace<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;ul</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;proposition-links&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;/user/login&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Log in<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+        
+      <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/nav&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/header&gt;</span>
+</pre></div>
+</div>
+            
+            
+<header role="banner" id="global-header" class="">
+  <div class="header-wrapper">
+    <div class="header-global">
+      <div class="header-logo">
+        <a href="#" title="" id="logo" class="content"></a>
+      </div>
+    </div>
+    
+      <div class="header-proposition">
+  <div class="content">
+    <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+    <nav id="proposition-menu">
+      <a href="/" id="proposition-name">Digital Marketplace</a>
+      <ul id="proposition-links">
+        
+          
+            <li><a href="/">View your account</a></li>
+          
+          
+          <li>
+            <form method="post" action="/user/logout">
+              <input type="submit" class="logout-button" value="Log out" />
+              <input type="hidden" name="csrf_token" value="token_set_for_documentation_only" />
+            </form>
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</div>
+    
+  </div>
+</header>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">set</span> <span style="color: #19177C">csrf_token_value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;token_set_for_documentation_only&#39;</span> <span style="color: #BC7A00">%}</span>
+&lt;header role=&quot;banner&quot; id=&quot;global-header&quot; class=&quot;&quot;&gt;
+  &lt;div class=&quot;header-wrapper&quot;&gt;
+    &lt;div class=&quot;header-global&quot;&gt;
+      &lt;div class=&quot;header-logo&quot;&gt;
+        &lt;a href=&quot;#&quot; title=&quot;&quot; id=&quot;logo&quot; class=&quot;content&quot;&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">with</span> <span style="color: #19177C">logged_in</span><span style="color: #666666">=</span><span style="color: #008000">True</span><span style="color: #666666">,</span> <span style="color: #19177C">role</span><span style="color: #666666">=</span><span style="color: #BA2121">&#39;buyer&#39;</span> <span style="color: #BC7A00">%}</span>
+      <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;proposition-header.html&quot;</span> <span style="color: #BC7A00">%}</span>
+    <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+  &lt;/div&gt;
+&lt;/header&gt;
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;header</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;banner&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;global-header&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-global&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-logo&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">title=</span><span style="color: #BA2121">&quot;&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;logo&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;content&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/a&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-proposition&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;content&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#proposition-links&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;js-header-toggle menu&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Menu<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;nav</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;proposition-menu&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;/&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;proposition-name&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Digital Marketplace<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;ul</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;proposition-links&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+          
+            <span style="color: #008000; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;/&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>View your account<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+          
+          
+          <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;form</span> <span style="color: #7D9029">method=</span><span style="color: #BA2121">&quot;post&quot;</span> <span style="color: #7D9029">action=</span><span style="color: #BA2121">&quot;/user/logout&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;logout-button&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Log out&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;hidden&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;csrf_token&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;token_set_for_documentation_only&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/form&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+        
+      <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/nav&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/header&gt;</span>
+</pre></div>
+</div>
+            
+            
+<header role="banner" id="global-header" class="">
+  <div class="header-wrapper">
+    <div class="header-global">
+      <div class="header-logo">
+        <a href="#" title="" id="logo" class="content"></a>
+      </div>
+    </div>
+    
+      <div class="header-proposition">
+  <div class="content">
+    <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+    <nav id="proposition-menu">
+      <a href="/" id="proposition-name">Digital Marketplace</a>
+      <ul id="proposition-links">
+        
+          
+            <li><a href="/suppliers">View your account</a></li>
+          
+          
+          <li>
+            <form method="post" action="/user/logout">
+              <input type="submit" class="logout-button" value="Log out" />
+              <input type="hidden" name="csrf_token" value="token_set_for_documentation_only" />
+            </form>
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</div>
+    
+  </div>
+</header>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">set</span> <span style="color: #19177C">csrf_token_value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;token_set_for_documentation_only&#39;</span> <span style="color: #BC7A00">%}</span>
+&lt;header role=&quot;banner&quot; id=&quot;global-header&quot; class=&quot;&quot;&gt;
+  &lt;div class=&quot;header-wrapper&quot;&gt;
+    &lt;div class=&quot;header-global&quot;&gt;
+      &lt;div class=&quot;header-logo&quot;&gt;
+        &lt;a href=&quot;#&quot; title=&quot;&quot; id=&quot;logo&quot; class=&quot;content&quot;&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">with</span> <span style="color: #19177C">logged_in</span><span style="color: #666666">=</span><span style="color: #008000">True</span><span style="color: #666666">,</span> <span style="color: #19177C">role</span><span style="color: #666666">=</span><span style="color: #BA2121">&#39;supplier&#39;</span> <span style="color: #BC7A00">%}</span>
+      <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;proposition-header.html&quot;</span> <span style="color: #BC7A00">%}</span>
+    <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+  &lt;/div&gt;
+&lt;/header&gt;
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;header</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;banner&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;global-header&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-global&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-logo&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">title=</span><span style="color: #BA2121">&quot;&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;logo&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;content&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/a&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-proposition&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;content&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#proposition-links&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;js-header-toggle menu&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Menu<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;nav</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;proposition-menu&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;/&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;proposition-name&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Digital Marketplace<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;ul</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;proposition-links&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+          
+            <span style="color: #008000; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;/suppliers&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>View your account<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+          
+          
+          <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;form</span> <span style="color: #7D9029">method=</span><span style="color: #BA2121">&quot;post&quot;</span> <span style="color: #7D9029">action=</span><span style="color: #BA2121">&quot;/user/logout&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;logout-button&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Log out&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;hidden&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;csrf_token&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;token_set_for_documentation_only&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/form&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+        
+      <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/nav&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/header&gt;</span>
+</pre></div>
+</div>
+            
+            
+<header role="banner" id="global-header" class="">
+  <div class="header-wrapper">
+    <div class="header-global">
+      <div class="header-logo">
+        <a href="#" title="" id="logo" class="content"></a>
+      </div>
+    </div>
+    
+      <div class="header-proposition">
+  <div class="content">
+    <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+    <nav id="proposition-menu">
+      <a href="/" id="proposition-name">Digital Marketplace</a>
+      <ul id="proposition-links">
+        
+          
+          
+            <li><a href="#status-changes">Service status changes</a></li>
+          
+          <li>
+            <form method="post" action="/user/logout">
+              <input type="submit" class="logout-button" value="Log out" />
+              <input type="hidden" name="csrf_token" value="token_set_for_documentation_only" />
+            </form>
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</div>
+    
+  </div>
+</header>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">set</span> <span style="color: #19177C">csrf_token_value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;token_set_for_documentation_only&#39;</span> <span style="color: #BC7A00">%}</span>
+&lt;header role=&quot;banner&quot; id=&quot;global-header&quot; class=&quot;&quot;&gt;
+  &lt;div class=&quot;header-wrapper&quot;&gt;
+    &lt;div class=&quot;header-global&quot;&gt;
+      &lt;div class=&quot;header-logo&quot;&gt;
+        &lt;a href=&quot;#&quot; title=&quot;&quot; id=&quot;logo&quot; class=&quot;content&quot;&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">with</span> <span style="color: #19177C">logged_in</span><span style="color: #666666">=</span><span style="color: #008000">True</span><span style="color: #666666">,</span> <span style="color: #19177C">role</span><span style="color: #666666">=</span><span style="color: #BA2121">&#39;admin&#39;</span><span style="color: #666666">,</span> <span style="color: #19177C">items</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+      <span style="color: #666666">{</span><span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Service status changes&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#status-changes&quot;</span><span style="color: #666666">}</span>
+    <span style="color: #666666">]</span> <span style="color: #BC7A00">%}</span>
+      <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;proposition-header.html&quot;</span> <span style="color: #BC7A00">%}</span>
+    <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+  &lt;/div&gt;
+&lt;/header&gt;
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;header</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;banner&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;global-header&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-global&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-logo&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">title=</span><span style="color: #BA2121">&quot;&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;logo&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;content&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/a&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-proposition&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;content&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#proposition-links&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;js-header-toggle menu&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Menu<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;nav</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;proposition-menu&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;/&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;proposition-name&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Digital Marketplace<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;ul</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;proposition-links&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+          
+          
+            <span style="color: #008000; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#status-changes&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Service status changes<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+          
+          <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;form</span> <span style="color: #7D9029">method=</span><span style="color: #BA2121">&quot;post&quot;</span> <span style="color: #7D9029">action=</span><span style="color: #BA2121">&quot;/user/logout&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;logout-button&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Log out&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;hidden&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;csrf_token&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;token_set_for_documentation_only&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/form&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+        
+      <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/nav&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/header&gt;</span>
+</pre></div>
+</div>
+    </div>
+</main>
+
+
+    <footer class="group js-footer" id="footer" role="contentinfo">
+
+      <div class="footer-wrapper">
+        
+
+        <div class="footer-meta">
+          <div class="footer-meta-inner">
+            
+
+            <div class="open-government-licence">
+              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
+              
+                
+              
+            </div>
+          </div>
+
+          <div class="copyright">
+            <a href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+    <script src="govuk_template/assets/javascripts/govuk-template.js?0.19.2"></script>
+
+    <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/vendor/jquery-1.11.0.js"></script>
+
+<script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/onready.js"></script>
+
+
+    
+    <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+  </body>
+</html>

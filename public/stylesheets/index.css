@@ -1206,6 +1206,22 @@ a.button-save {
       .banner-temporary-message-without-action .banner-message {
         float: none; } }
 
+.logout-button {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer; }
+  @media (min-width: 641px) {
+    .logout-button {
+      font-size: 16px; } }
+
+.logout-button:hover {
+  text-decoration: underline; }
+
 .page-heading,
 .page-heading-no-breadcrumb,
 .page-heading-smaller {

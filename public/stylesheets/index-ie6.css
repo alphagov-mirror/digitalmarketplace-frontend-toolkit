@@ -1580,12 +1580,12 @@ legend {
   margin-bottom: 0; }
 
 .divider {
-  padding: 20px 0 15px 0;
+  padding: 20px 0 20px 0;
   border-top: 1px solid #dee0e2; }
   .divider p.instruction-list-item-top,
   .divider a.instruction-list-item-action,
   .divider p.instruction-list-item-box {
-    margin-top: 0.5em; }
+    margin-top: 1em; }
 
 p.instruction-list-item-top.search-summary {
   font-family: "nta", Arial, sans-serif;
@@ -1653,7 +1653,7 @@ li.instruction-list-item.divider:first-of-type {
   border: 3px solid #6f777b;
   font-weight: bold;
   color: #6f777b;
-  padding: 0.33em;
+  padding: 0.5em 0.75em 0.33em 0.5em;
   width: fit-content;
   width: -moz-fit-content; }
 

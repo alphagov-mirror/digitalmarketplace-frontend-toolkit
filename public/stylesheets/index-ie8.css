@@ -1514,9 +1514,37 @@ legend {
 .divider {
   padding: 20px 0 15px 0;
   border-top: 1px solid #dee0e2; }
+  .divider p.instruction-list-item-top,
+  .divider a.instruction-list-item-action,
+  .divider p.instruction-list-item-box {
+    margin-top: 0.5em; }
+
+p.instruction-list-item-top.search-summary {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 1.14286;
+  font-size: 16px;
+  line-height: 1.25;
+  padding-bottom: 0px;
+  border-bottom: 0px; }
+  p.instruction-list-item-top.search-summary .search-summary-count {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 1.14286;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: normal;
+    padding-right: 0px; }
 
 .instruction-list .divider:first-child {
   border-top: none; }
+
+li.instruction-list-item.divider:first-of-type {
+  padding-top: 0px; }
 
 .instruction-list[start] .divider {
   border-top: 1px solid #dee0e2; }
@@ -1533,6 +1561,37 @@ legend {
 .instruction-list-item-bottom,
 .lead-in {
   font-weight: normal; }
+
+.instruction-list-item-action.button-save {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 1.25;
+  font-size: 19px;
+  line-height: 1.31579;
+  margin-bottom: 0px; }
+
+.instruction-list-item-box {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 1.14286;
+  font-size: 16px;
+  line-height: 1.25; }
+
+.instruction-list-item-box {
+  border: 3px solid #6f777b;
+  font-weight: bold;
+  color: #6f777b;
+  padding: 0.33em;
+  width: fit-content;
+  width: -moz-fit-content; }
+
+.instruction-list-item-box.complete {
+  border-color: #0b0c0c;
+  color: #0b0c0c; }
 
 .instruction-list-item-bottom {
   margin-top: 10px; }

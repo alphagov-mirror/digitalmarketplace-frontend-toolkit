@@ -1629,18 +1629,6 @@ p.instruction-list-item-top.search-summary {
     p.instruction-list-item-top.search-summary {
       font-size: 16px;
       line-height: 1.25; } }
-  p.instruction-list-item-top.search-summary .search-summary-count {
-    font-family: "nta", Arial, sans-serif;
-    font-weight: 400;
-    text-transform: none;
-    font-size: 14px;
-    line-height: 1.14286;
-    font-weight: normal;
-    padding-right: 0px; }
-    @media (min-width: 641px) {
-      p.instruction-list-item-top.search-summary .search-summary-count {
-        font-size: 16px;
-        line-height: 1.25; } }
 
 .instruction-list .divider:first-child {
   border-top: none; }
@@ -2029,20 +2017,21 @@ a.link-button-with-advice {
       line-height: 1.25; } }
   .search-summary strong {
     font-weight: bold; }
-  .search-summary .search-summary-count {
-    font-family: "nta", Arial, sans-serif;
-    font-weight: 700;
-    text-transform: none;
-    font-size: 32px;
-    line-height: 1.09375;
-    padding-right: 6px; }
-    @media (min-width: 641px) {
-      .search-summary .search-summary-count {
-        font-size: 48px;
-        line-height: 1.04167; } }
-    @media (min-width: 641px) {
-      .search-summary .search-summary-count {
-        padding-right: 10px; } }
+
+#js-dm-live-search-wrapper .search-summary .search-summary-count {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 32px;
+  line-height: 1.09375;
+  padding-right: 6px; }
+  @media (min-width: 641px) {
+    #js-dm-live-search-wrapper .search-summary .search-summary-count {
+      font-size: 48px;
+      line-height: 1.04167; } }
+  @media (min-width: 641px) {
+    #js-dm-live-search-wrapper .search-summary .search-summary-count {
+      padding-right: 10px; } }
 
 .search-suggestion {
   font-family: "nta", Arial, sans-serif;

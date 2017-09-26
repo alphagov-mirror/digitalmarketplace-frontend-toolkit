@@ -2018,7 +2018,7 @@ a.link-button-with-advice {
   .search-summary strong {
     font-weight: bold; }
 
-#js-dm-live-search-wrapper .search-summary .search-summary-count {
+.search-results-page .search-summary .search-summary-count {
   font-family: "nta", Arial, sans-serif;
   font-weight: 700;
   text-transform: none;
@@ -2026,11 +2026,11 @@ a.link-button-with-advice {
   line-height: 1.09375;
   padding-right: 6px; }
   @media (min-width: 641px) {
-    #js-dm-live-search-wrapper .search-summary .search-summary-count {
+    .search-results-page .search-summary .search-summary-count {
       font-size: 48px;
       line-height: 1.04167; } }
   @media (min-width: 641px) {
-    #js-dm-live-search-wrapper .search-summary .search-summary-count {
+    .search-results-page .search-summary .search-summary-count {
       padding-right: 10px; } }
 
 .search-suggestion {

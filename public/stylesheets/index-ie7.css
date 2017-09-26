@@ -1917,7 +1917,7 @@ a.link-button-with-advice {
   .search-summary strong {
     font-weight: bold; }
 
-#js-dm-live-search-wrapper .search-summary .search-summary-count {
+.search-results-page .search-summary .search-summary-count {
   font-family: "nta", Arial, sans-serif;
   font-weight: 700;
   text-transform: none;

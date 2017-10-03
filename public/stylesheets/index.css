@@ -2885,9 +2885,9 @@ body {
       font-size: 24px;
       line-height: 1.25; } }
   .question-heading p {
-    margin-top: 10px; }
-    .question-heading p:first-child {
-      margin-top: 0; }
+    margin-bottom: 10px; }
+    .question-heading p:last-child {
+      margin-bottom: 0; }
 
 .question-description {
   font-family: "nta", Arial, sans-serif;

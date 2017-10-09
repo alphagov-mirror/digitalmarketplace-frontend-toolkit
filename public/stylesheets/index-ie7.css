@@ -1780,7 +1780,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
   display: inline-block;
   zoom: 1;
   display: inline;
-  padding-right: 7em;
+  width: 33.333%;
   padding-bottom: 3em;
   vertical-align: top; }
   .statistic-container .big-statistic {

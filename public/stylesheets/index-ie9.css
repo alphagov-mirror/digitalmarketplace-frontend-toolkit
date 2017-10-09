@@ -1664,7 +1664,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 .statistic-container {
   display: -moz-inline-stack;
   display: inline-block;
-  padding-right: 7em;
+  width: 33.333%;
   padding-bottom: 3em;
   vertical-align: top; }
   .statistic-container .big-statistic {

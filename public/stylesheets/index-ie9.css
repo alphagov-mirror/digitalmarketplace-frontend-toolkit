@@ -1019,6 +1019,174 @@ input.button-save-with-advice {
 .grid-row {
   margin: 0 -15px; }
 
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%; }
+
+main {
+  display: block; }
+
+ol,
+ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 1.25;
+  font-size: 19px;
+  line-height: 1.31579; }
+
+legend {
+  width: 100%; }
+
+.list-bullet {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 5px; }
+  .list-bullet li {
+    margin-bottom: 5px; }
+
+.list-number, .instruction-list, .sublist {
+  list-style-type: decimal;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 5px; }
+  .list-number li, .instruction-list li, .sublist li {
+    margin-bottom: 5px; }
+
+.list-no-bullet {
+  list-style-type: none;
+  margin-top: 5px; }
+  .list-no-bullet li {
+    margin-bottom: 10px; }
+
+.check-list > .list-bullet,
+.check-list > .list-number,
+.check-list > .instruction-list,
+.check-list > .sublist {
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  padding-bottom: 15px; }
+  .check-list > .list-bullet li,
+  .check-list > .list-number li,
+  .check-list > .instruction-list li,
+  .check-list > .sublist li {
+    margin-bottom: 15px; }
+  .check-list > .list-bullet p,
+  .check-list > .list-number p,
+  .check-list > .instruction-list p,
+  .check-list > .sublist p {
+    margin: 0; }
+  .check-list > .list-bullet a,
+  .check-list > .list-number a,
+  .check-list > .instruction-list a,
+  .check-list > .sublist a {
+    word-wrap: break-word; }
+
+.explanation-list .lead {
+  padding-bottom: 0;
+  margin: 0; }
+
+.explanation-list > .list-bullet,
+.explanation-list > .list-number,
+.explanation-list > .instruction-list,
+.explanation-list > .sublist {
+  margin-top: 0; }
+  .explanation-list > .list-bullet li,
+  .explanation-list > .list-number li,
+  .explanation-list > .instruction-list li,
+  .explanation-list > .sublist li {
+    margin-bottom: 0; }
+
 .banner-destructive-without-action, .banner-destructive-with-action, .banner-warning-with-action, .banner-warning-without-action, .banner-success-with-action, .banner-success-without-action, .banner-information-with-action, .banner-information-without-action, .banner-temporary-message-without-action {
   font-family: "nta", Arial, sans-serif;
   font-weight: 400;
@@ -1031,6 +1199,16 @@ input.button-save-with-advice {
   margin-top: 15px;
   border-width: 5px;
   border-style: solid; }
+  .banner-destructive-without-action .banner-content, .banner-destructive-with-action .banner-content, .banner-warning-with-action .banner-content, .banner-warning-without-action .banner-content, .banner-success-with-action .banner-content, .banner-success-without-action .banner-content, .banner-information-with-action .banner-content, .banner-information-without-action .banner-content, .banner-temporary-message-without-action .banner-content {
+    color: #0b0c0c;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+    .banner-destructive-without-action .banner-content ul, .banner-destructive-with-action .banner-content ul, .banner-warning-with-action .banner-content ul, .banner-warning-without-action .banner-content ul, .banner-success-with-action .banner-content ul, .banner-success-without-action .banner-content ul, .banner-information-with-action .banner-content ul, .banner-information-without-action .banner-content ul, .banner-temporary-message-without-action .banner-content ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 5px; }
+      .banner-destructive-without-action .banner-content ul li, .banner-destructive-with-action .banner-content ul li, .banner-warning-with-action .banner-content ul li, .banner-warning-without-action .banner-content ul li, .banner-success-with-action .banner-content ul li, .banner-success-without-action .banner-content ul li, .banner-information-with-action .banner-content ul li, .banner-information-without-action .banner-content ul li, .banner-temporary-message-without-action .banner-content ul li {
+        margin-bottom: 5px; }
 
 .flash-message-container.banner-destructive-without-action, .flash-message-container.banner-destructive-with-action, .flash-message-container.banner-warning-with-action, .flash-message-container.banner-warning-without-action, .flash-message-container.banner-success-with-action, .flash-message-container.banner-success-without-action, .flash-message-container.banner-information-with-action, .flash-message-container.banner-information-without-action, .flash-message-container.banner-temporary-message-without-action {
   margin-bottom: 40px; }
@@ -1076,7 +1254,8 @@ input.button-save-with-advice {
     line-height: 1.11111;
     margin-bottom: 15px;
     margin-bottom: 20px; }
-  .banner-temporary-message-without-action .banner-message {
+  .banner-temporary-message-without-action .banner-message,
+  .banner-temporary-message-without-action .banner-content {
     font-family: "nta", Arial, sans-serif;
     font-weight: 400;
     text-transform: none;
@@ -1092,6 +1271,8 @@ input.button-save-with-advice {
     box-sizing: border-box;
     padding: 0;
     float: none; }
+  .banner-temporary-message-without-action .banner-content {
+    color: inherit; }
 
 .logout-button {
   font-family: "nta", Arial, sans-serif;

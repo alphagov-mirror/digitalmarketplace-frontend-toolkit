@@ -13,6 +13,17 @@
   .temporary-message a:active {
     color: #96c6e2; }
 
+.dmspeak .heading-large {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 24px;
+  line-height: 1.04167;
+  font-size: 36px;
+  line-height: 1.11111;
+  margin-top: 40px;
+  margin-bottom: 10px; }
+
 .dmspeak .heading-xmedium {
   font-family: "nta", Arial, sans-serif;
   font-weight: 700;
@@ -1397,6 +1408,51 @@ legend {
 .logout-button:hover {
   text-decoration: underline; }
 
+@media only screen and (min-width: 769px) {
+  #global-header.with-proposition .header-wrapper .header-global {
+    width: 60%; } }
+
+#global-header.with-proposition .header-wrapper .header-global .header-logo {
+  width: auto; }
+
+#global-header.with-proposition .header-wrapper .header-global .header-title {
+  float: left;
+  font-family: "nta", Arial, sans-serif;
+  font-weight: normal;
+  padding-top: 7px;
+  font-size: 24px; }
+  @media only screen and (max-width: 800px) {
+    #global-header.with-proposition .header-wrapper .header-global .header-title {
+      padding-left: 15px; } }
+  @media only screen and (min-width: 473px) and (max-width: 769px) {
+    #global-header.with-proposition .header-wrapper .header-global .header-title {
+      padding-left: 0px; } }
+  #global-header.with-proposition .header-wrapper .header-global .header-title a {
+    color: #fff;
+    text-decoration: none; }
+  #global-header.with-proposition .header-wrapper .header-global .header-title:hover {
+    text-decoration: underline; }
+
+#global-header.with-proposition .header-wrapper .header-global .phase-tag {
+  margin-left: 10px;
+  margin-top: 4px;
+  vertical-align: top; }
+
+#global-header.with-proposition .header-wrapper .header-proposition {
+  text-align: right; }
+  @media only screen and (min-width: 769px) {
+    #global-header.with-proposition .header-wrapper .header-proposition {
+      width: 40%; } }
+  #global-header.with-proposition .header-wrapper .header-proposition #proposition-links {
+    float: right; }
+    @media only screen and (max-width: 769px) {
+      #global-header.with-proposition .header-wrapper .header-proposition #proposition-links li {
+        text-align: left;
+        width: 100%; } }
+    @media only screen and (max-width: 769px) {
+      #global-header.with-proposition .header-wrapper .header-proposition #proposition-links {
+        float: none; } }
+
 .page-heading,
 .page-heading-no-breadcrumb,
 .page-heading-smaller {
@@ -1981,34 +2037,6 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
     line-height: 1.25;
     font-size: 19px;
     line-height: 1.31579; }
-
-.link-button,
-a.link-button, .link-button-with-advice,
-a.link-button-with-advice {
-  background: #2b8cc4;
-  display: block;
-  padding: 6px 0;
-  color: #fff;
-  font-family: "nta", Arial, sans-serif;
-  font-weight: 400;
-  text-transform: none;
-  font-size: 18px;
-  line-height: 1.2;
-  font-size: 24px;
-  line-height: 1.25;
-  text-align: center; }
-  .link-button:hover, .link-button-with-advice:hover {
-    background: #005ea5; }
-
-.link-button,
-a.link-button {
-  margin: 30px 0 0 0;
-  margin: 75px 0 0; }
-
-.link-button-with-advice,
-a.link-button-with-advice {
-  margin: 15px 0 0 0;
-  margin: 15px 0 0; }
 
 .grid-row, .notice, .question, .question-first, .validation-wrapper, .message-wrapper {
   zoom: 1; }
@@ -2885,7 +2913,7 @@ legend {
   .hint ol, .hint-underneath ol, .question-advice ol {
     list-style: decimal; }
 
-.single-question-page form [class^="question-heading"], fieldset.checkbox-tree__inputs > legend, .checkbox-tree__inputs details legend {
+.search-summary-accessible-hint-wrapper, .single-question-page form [class^="question-heading"], fieldset.checkbox-tree__inputs > legend, .checkbox-tree__inputs details legend {
   position: absolute;
   left: -9999em; }
 
@@ -3354,12 +3382,12 @@ table.summary-item-body tbody .summary-item-field-no-padding {
   line-height: 1.14286;
   font-size: 16px;
   line-height: 1.25;
-  text-align: left;
   border-top: 1px solid #bfc1c3; }
 
 .summary-item-field-heading-first,
 .summary-item-field-heading {
-  padding: 10px 0 10px 0; }
+  padding: 10px 0 10px 0;
+  text-align: left; }
 
 a.summary-item-remove-link {
   color: #b10e1e; }

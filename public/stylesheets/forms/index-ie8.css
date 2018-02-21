@@ -1,4 +1,15 @@
 /* Blocks shared between multiple selectors */
+.dmspeak .heading-large {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 24px;
+  line-height: 1.04167;
+  font-size: 36px;
+  line-height: 1.11111;
+  margin-top: 40px;
+  margin-bottom: 10px; }
+
 .dmspeak .heading-xmedium {
   font-family: "nta", Arial, sans-serif;
   font-weight: 700;
@@ -1068,12 +1079,12 @@ table.summary-item-body tbody .summary-item-field-no-padding {
   line-height: 1.14286;
   font-size: 16px;
   line-height: 1.25;
-  text-align: left;
   border-top: 1px solid #bfc1c3; }
 
 .summary-item-field-heading-first,
 .summary-item-field-heading {
-  padding: 10px 0 10px 0; }
+  padding: 10px 0 10px 0;
+  text-align: left; }
 
 a.summary-item-remove-link {
   color: #b10e1e; }

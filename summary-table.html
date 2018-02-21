@@ -2762,7 +2762,7 @@
       
       
       
-    >Edit</a>
+    >Edit<span class="visually-hidden"> extra text for screenreaders</span></a>
   </p>
 
     
@@ -2814,7 +2814,7 @@
   
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with incomplete entry&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
-<span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.top_link</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Edit&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;#&#39;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+<span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.top_link</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Edit&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;#&#39;</span><span style="color: #666666">,</span> <span style="color: #19177C">hidden_text</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;extra text for screenreaders&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
   <span style="color: #666666">[</span>
     <span style="color: #666666">(</span><span style="color: #BA2121">&quot;Features&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;Answer required&quot;</span><span style="color: #666666">),</span>
@@ -2844,7 +2844,7 @@
       
       
       
-    <span style="color: #008000; font-weight: bold">&gt;</span>Edit<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #008000; font-weight: bold">&gt;</span>Edit<span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visually-hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span> extra text for screenreaders<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
 
     

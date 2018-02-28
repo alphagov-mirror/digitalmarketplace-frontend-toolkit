@@ -29,9 +29,6 @@
     <!--[if !IE]><!-->
 <link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index.css "/>
 <!--<![endif]-->
-<!--[if IE 6]>
-<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie6.css "/>
-<![endif]-->
 <!--[if IE 7]>
 <link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie7.css "/>
 <![endif]-->
@@ -3212,9 +3209,13 @@ eg experience working on government digital projects<span style="color: #008000;
   
   
   
+  
   <div class="panel  panel-border-narrow js-hidden" id="vat_number-target">
     <label class="form-label" for="vat_number">
         What is your VAT number?
+        
+          <span class="hint">It is made up of some digits</span>
+        
         
     </label>
     <div id="vat_number">
@@ -3264,7 +3265,8 @@ eg experience working on government digital projects<span style="color: #008000;
         <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #008000">true</span><span style="color: #666666">,</span> 
         <span style="color: #BA2121">&quot;reveal&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">{</span>
             <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;vat_number&quot;</span><span style="color: #666666">,</span> 
-            <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;What is your VAT number?&quot;</span>
+            <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;What is your VAT number?&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #BA2121">&quot;hint&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;It is made up of some digits&quot;</span>
         <span style="color: #666666">}</span>
     <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
@@ -3323,9 +3325,13 @@ eg experience working on government digital projects<span style="color: #008000;
   
   
   
+  
   <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;panel  panel-border-narrow js-hidden&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;vat_number-target&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;form-label&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;vat_number&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         What is your VAT number?
+        
+          <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>It is made up of some digits<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+        
         
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;vat_number&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -3416,13 +3422,15 @@ eg experience working on government digital projects<span style="color: #008000;
   
   
   
+  
   <div class="panel  form-group-error panel-border-narrow js-hidden" id="vat_number_error-target">
     <label class="form-label" for="vat_number_error">
         What is your VAT number?
         
-        <span class="validation-message">
-          You must enter a valid VAT number.
-        </span>
+          <span class="hint">It is made up of some digits</span>
+        
+        
+          <span class="validation-message">You must enter a valid VAT number.</span>
         
     </label>
     <div id="vat_number_error">
@@ -3474,6 +3482,7 @@ eg experience working on government digital projects<span style="color: #008000;
         <span style="color: #BA2121">&quot;reveal&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">{</span>
             <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;vat_number_error&quot;</span><span style="color: #666666">,</span> 
             <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;What is your VAT number?&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #BA2121">&quot;hint&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;It is made up of some digits&quot;</span><span style="color: #666666">,</span> 
             <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Blurgh&quot;</span><span style="color: #666666">,</span> 
             <span style="color: #BA2121">&quot;error&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;You must enter a valid VAT number.&quot;</span>
         <span style="color: #666666">}</span>
@@ -3534,13 +3543,15 @@ eg experience working on government digital projects<span style="color: #008000;
   
   
   
+  
   <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;panel  form-group-error panel-border-narrow js-hidden&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;vat_number_error-target&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;form-label&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;vat_number_error&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         What is your VAT number?
         
-        <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-          You must enter a valid VAT number.
-        <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hint&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>It is made up of some digits<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+        
+        
+          <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>You must enter a valid VAT number.<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
         
     <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;vat_number_error&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>

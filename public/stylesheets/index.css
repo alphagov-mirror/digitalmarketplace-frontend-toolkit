@@ -1320,9 +1320,18 @@ body {
       font-size: 24px;
       line-height: 1.25; } }
   .banner-destructive-without-action .banner-content, .banner-destructive-with-action .banner-content, .banner-warning-with-action .banner-content, .banner-warning-without-action .banner-content, .banner-success-with-action .banner-content, .banner-success-without-action .banner-content, .banner-information-with-action .banner-content, .banner-information-without-action .banner-content, .banner-temporary-message-without-action .banner-content {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25;
     color: #0b0c0c;
     margin-top: 15px;
     margin-bottom: 15px; }
+    @media (min-width: 641px) {
+      .banner-destructive-without-action .banner-content, .banner-destructive-with-action .banner-content, .banner-warning-with-action .banner-content, .banner-warning-without-action .banner-content, .banner-success-with-action .banner-content, .banner-success-without-action .banner-content, .banner-information-with-action .banner-content, .banner-information-without-action .banner-content, .banner-temporary-message-without-action .banner-content {
+        font-size: 19px;
+        line-height: 1.31579; } }
     .banner-destructive-without-action .banner-content ul, .banner-destructive-with-action .banner-content ul, .banner-warning-with-action .banner-content ul, .banner-warning-without-action .banner-content ul, .banner-success-with-action .banner-content ul, .banner-success-without-action .banner-content ul, .banner-information-with-action .banner-content ul, .banner-information-without-action .banner-content ul, .banner-temporary-message-without-action .banner-content ul {
       list-style-type: disc;
       padding-left: 20px;

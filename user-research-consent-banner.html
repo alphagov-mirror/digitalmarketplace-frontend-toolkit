@@ -4,7 +4,7 @@
 <!--[if gt IE 8]><!--><html lang=""><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>Digital Marketplace frontend toolkit</title>
+    <title>User research consent banner - Digital Marketplace frontend toolkit</title>
 
     <!--[if gt IE 8]><!--><link href="govuk_template/assets/stylesheets/govuk-template.css?0.19.2" media="screen" rel="stylesheet" /><!--<![endif]-->
     <!--[if IE 6]><link href="govuk_template/assets/stylesheets/govuk-template-ie6.css?0.19.2" media="screen" rel="stylesheet" /><![endif]-->
@@ -78,90 +78,51 @@
 
     <div id="global-header-bar"></div>
 
-    <main role="main" id="content" class="wrapper">
-  <div id="wrapper">
-    <header class="page-heading page-heading-no-breadcrumb">
-      <p class="context">
-        <a class="version-link" href="https://github.com/alphagov/digitalmarketplace-frontend-toolkit/releases/tag/v28.8.0">Version 28.8.0</a>
-      </p>
-      <h1>Digital Marketplace frontend toolkit</h1>
-    </header>
-    <ul class="index-list">
-      <li><a href="proposition-header.html">Page header</a></li>
-      <li><a href="breadcrumb.html">Breadcrumb</a></li>
-      <li><a href="browse-list.html">Browse list</a></li>
-      <li><a href="button.html">Buttons</a></li>
-      <li><a href="contact-details.html">Contact details</a></li>
-      <li><a href="custom-dimensions.html">Custom dimensions</a></li>
-      <li><a href="documents.html">Documents</a></li>
-      <li><a href="external-link.html">External Link</a></li>
+    <div id="global-breadcrumb" class="header-context">
+  <nav>
+    <ol class="group" role="breadcrumbs">
       <li>
-        <a href="forms/">Forms</a>
-        <ul class="index-list">
-          <li>
-            <a href="forms/upload.html">File upload</a>
-          </li>
-          <li>
-            <a href="forms/keyword-search.html">Keyword search</a>
-          </li>
-          <li>
-            <a href="forms/list-entry.html">List entry textbox</a>
-          </li>
-          <li>
-            <a href="forms/option-select.html">Option select</a>
-          </li>
-          <li>
-            <a href="forms/pricing.html">Pricing</a>
-          </li>
-          <li>
-            <a href="forms/selection-buttons.html">Selection buttons</a>
-          </li>
-          <li>
-            <a href="forms/textbox.html">Textboxes</a>
-          </li>
-          <li>
-            <a href="forms/single-question-page.html">Single question page</a>
-          </li>
-          <li>
-            <a href="forms/validation.html">Validation</a>
-          </li>
-          <li>
-            <a href="forms/combinations.html">Combinations</a>
-          </li>
-          <li>
-            <a href="forms/checkbox-tree.html">Checkbox tree</a>
-          </li>
-          <li>
-            <a href="forms/date.html">Date</a>
-          </li>
-        </ul>
+        <a href="/digitalmarketplace-frontend-toolkit/">Home</a>
       </li>
-      <li><a href="grids.html">Grids</a></li>
-      <li><a href="instruction-list.html">Instruction list</a></li>
-      <li><a href="notification-banner.html">Notification banners</a></li>
-      <li><a href="page-heading.html">Page headings</a></li>
-      <li><a href="phase-banner.html">Phase banner</a></li>
-      <li><a href="previous-next-navigation.html">Previous/next navigation</a></li>
-      <li><a href="search-summary.html">Search summary</a></li>
-      <li><a href="secondary-action-link.html">Secondary action link</a></li>
-      <li><a href="service-id.html">Service ID</a></li>
-      <li>
-        <a href="shared_scss/">Shared SCSS</a>
-        <ul class="index-list">
-          <li>
-            <a href="shared_scss/lists.html">Lists</a>
-          </li>
-          <li>
-            <a href="shared_scss/dmspeak.html">DMSpeak</a>
-          </li>
-        </ul>
-      </li>
-      <li><a href="statistics.html">Statistics</a></li>
-      <li><a href="summary-table.html">Summary tables</a></li>
-      <li><a href="temporary-message.html">Temporary message</a></li>
-      <li><a href="user-research-consent-banner.html">User research consent banner</a></li>
-    </ul>
+    </ol>
+  </nav>
+</div>
+<main role="main" id="content" class="wrapper">
+    <div id="wrapper">
+        <header class="page-heading">
+            <h1>User research consent banner</h1>
+        </header>
+            
+            
+<div class="user-research-banner">
+  <div class="wrapper">
+    <p>
+      <strong class="banner-heading">Help us improve the Digital Marketplace</strong>
+      <a href="#" class="user-research-banner-close-btn">Close</a>
+    </p>
+    <p>
+      <a href="#">Sign up to be a potential user research participant</a>
+    </p>
   </div>
+</div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">macro</span> <span style="color: #19177C">url_for</span><span style="color: #666666">(</span><span style="color: #19177C">mocked_link_for_documentation_only</span><span style="color: #666666">)</span> <span style="color: #BC7A00">%}</span>#<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endmacro</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;user-research-consent-banner.html&quot;</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;user-research-banner&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;strong</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;banner-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Help us improve the Digital Marketplace<span style="color: #008000; font-weight: bold">&lt;/strong&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;user-research-banner-close-btn&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Close<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Sign up to be a potential user research participant<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+    </div>
 </main>
 
 
@@ -194,6 +155,7 @@
     <script src="govuk_template/assets/javascripts/govuk-template.js?0.19.2"></script>
 
     <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/vendor/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="../public/javascripts/user-research-consent-banner.js"></script>
 
 <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/onready.js"></script>
 

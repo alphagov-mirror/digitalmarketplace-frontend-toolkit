@@ -2215,6 +2215,23 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
     color: #0b0c0c;
     text-decoration: underline; }
 
+.user-research-banner {
+  background-color: #005ea5;
+  color: #fff;
+  display: none; }
+  .user-research-banner .wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px; }
+    .user-research-banner .wrapper a {
+      color: #fff; }
+    .user-research-banner .wrapper p {
+      margin-bottom: 20px; }
+    .user-research-banner .wrapper .banner-heading {
+      font-size: 24px; }
+    .user-research-banner .wrapper .user-research-banner-close-btn {
+      float: right; }
+
 .search-summary {
   font-family: "nta", Arial, sans-serif;
   font-weight: 400;

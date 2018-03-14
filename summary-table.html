@@ -1486,6 +1486,251 @@
             
 <h2 class="summary-item-heading">
       
+      Summary table with left-aligned action links that have hidden text for accessibility
+  </h2>
+
+    
+    <table class="summary-item-body">
+    <caption class="visually-hidden">
+      Summary table with left-aligned action links that have hidden text for accessibility
+    </caption>
+    <thead class="summary-item-field-headings">
+      <tr>
+        
+          <th scope="col" class="summary-item-field-heading-first">
+            
+              <span class="visually-hidden">Question</span>
+            
+          </th>
+        
+          <th scope="col" class="summary-item-field-heading">
+            
+              <span class="visually-hidden">Answer</span>
+            
+          </th>
+        
+          <th scope="col" class="summary-item-field-heading">
+            
+              <span class="visually-hidden"><span class="hidden">Action</span></span>
+            
+          </th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      
+      
+        
+  <tr class="summary-item-row">
+    
+    
+  <td  class="summary-item-field-first">
+    
+      <span>Registered company name</span>
+    
+  </td>
+    
+  <td  class="summary-item-field">
+    
+      <span><a href="#">Answer required<span class="visually-hidden"> for Registered company name</span></a></span>
+    
+  </td>
+    
+  <td  class="summary-item-field">
+    
+  </td>
+  
+  </tr>
+
+      
+        
+  <tr class="summary-item-row">
+    
+    
+  <td  class="summary-item-field-first">
+    
+      <span>Registered company address</span>
+    
+  </td>
+    
+  <td  class="summary-item-field">
+    
+      <span><a href="#">Answer required<span class="visually-hidden"> for Registered company address</span></a></span>
+    
+  </td>
+    
+  <td  class="summary-item-field">
+    
+  </td>
+  
+  </tr>
+
+      
+        
+  <tr class="summary-item-row">
+    
+    
+  <td  class="summary-item-field-first">
+    
+      <span>Registration number</span>
+    
+  </td>
+    
+  <td  class="summary-item-field">
+    
+      <span><a href="#">Answer required<span class="visually-hidden"> for Registration number</span></a></span>
+    
+  </td>
+    
+  <td  class="summary-item-field">
+    
+  </td>
+  
+  </tr>
+
+      
+    </tbody>
+  </table>
+  
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with left-aligned action links that have hidden text for accessibility&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
+  <span style="color: #666666">[</span>
+    <span style="color: #666666">{</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Registered company name&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;answer&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Answer required&quot;</span><span style="color: #666666">},</span>
+    <span style="color: #666666">{</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Registered company address&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;answer&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Answer required&quot;</span><span style="color: #666666">},</span>
+    <span style="color: #666666">{</span><span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Registration number&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;answer&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Answer required&quot;</span><span style="color: #666666">},</span>
+  <span style="color: #666666">],</span>
+  <span style="color: #19177C">caption</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Summary table with left-aligned action links that have hidden text for accessibility&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">empty_message</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;You haven&#39;t submitted any services yet&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">field_headings</span><span style="color: #666666">=[</span>
+    <span style="color: #BA2121">&quot;Question&quot;</span><span style="color: #666666">,</span>
+    <span style="color: #BA2121">&quot;Answer&quot;</span><span style="color: #666666">,</span>
+    <span style="color: #19177C">summary.hidden_field_heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Action&quot;</span><span style="color: #666666">)</span>
+  <span style="color: #666666">],</span>
+  <span style="color: #19177C">field_headings_visible</span><span style="color: #666666">=</span><span style="color: #008000">False</span>
+<span style="color: #666666">)</span> <span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span> <span style="color: #19177C">summary.row</span><span style="color: #666666">()</span> <span style="color: #BC7A00">%}</span>
+    <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.field_name</span><span style="color: #666666">(</span><span style="color: #19177C">item.question</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+    <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.link</span><span style="color: #666666">(</span><span style="color: #19177C">link_title</span><span style="color: #666666">=</span><span style="color: #19177C">item.answer</span><span style="color: #666666">,</span> <span style="color: #19177C">link</span><span style="color: #666666">=</span><span style="color: #BA2121">&#39;#&#39;</span><span style="color: #666666">,</span> <span style="color: #19177C">hidden_text</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;for &quot;</span> <span style="color: #666666">+</span> <span style="color: #19177C">item.question</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+    <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.text</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      
+      Summary table with left-aligned action links that have hidden text for accessibility
+  <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
+
+    
+    <span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;caption</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visually-hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      Summary table with left-aligned action links that have hidden text for accessibility
+    <span style="color: #008000; font-weight: bold">&lt;/caption&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;thead</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-headings&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            
+              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visually-hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Question<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+            
+          <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            
+              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visually-hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Answer<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+            
+          <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">scope=</span><span style="color: #BA2121">&quot;col&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            
+              <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visually-hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Action<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/span&gt;</span>
+            
+          <span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        
+      <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/thead&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tbody&gt;</span>
+      
+      
+        
+  <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+    
+  <span style="color: #008000; font-weight: bold">&lt;td</span>  <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Registered company name<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;td</span>  <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;span&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Answer required<span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visually-hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span> for Registered company name<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;td</span>  <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+  
+  <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+
+      
+        
+  <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+    
+  <span style="color: #008000; font-weight: bold">&lt;td</span>  <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Registered company address<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;td</span>  <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;span&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Answer required<span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visually-hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span> for Registered company address<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;td</span>  <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+  
+  <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+
+      
+        
+  <span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-row&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+    
+  <span style="color: #008000; font-weight: bold">&lt;td</span>  <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field-first&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>Registration number<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;td</span>  <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;span&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Answer required<span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;visually-hidden&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span> for Registration number<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;td</span>  <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+  
+  <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+
+      
+    <span style="color: #008000; font-weight: bold">&lt;/tbody&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
+  
+</pre></div>
+</div>
+            
+            
+<h2 class="summary-item-heading">
+      
       Summary table with action button
   </h2>
 

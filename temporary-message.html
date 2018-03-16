@@ -110,6 +110,8 @@
   <p class="temporary-message-message">
     G‑Cloud 7 services will be available from 23 November 2015.
   </p>
+  
+  
 </div>
             </div>
         </div>
@@ -137,6 +139,8 @@
   <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     G‑Cloud 7 services will be available from 23 November 2015.
   <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+  
+  
 <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -153,6 +157,8 @@
   <p class="temporary-message-message">
     <a href="#">View your application</a>
   </p>
+  
+  
 </div>
             </div>
         </div>
@@ -179,6 +185,8 @@
   <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>View your application<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+  
+  
 <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -189,6 +197,8 @@
   <h3 class="temporary-message-heading">
     Example without any body copy that is quite long and may wrap onto multiple lines
   </h3>
+  
+  
 </div>
             </div>
         </div>
@@ -206,6 +216,8 @@
   <span style="color: #008000; font-weight: bold">&lt;h3</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     Example without any body copy that is quite long and may wrap onto multiple lines
   <span style="color: #008000; font-weight: bold">&lt;/h3&gt;</span>
+  
+  
 <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -222,6 +234,8 @@
   <p class="temporary-message-message-main">
     G‑Cloud 8 services will be available from 23 November 2015.
   </p>
+  
+  
 </div>
             </div>
         </div>
@@ -250,6 +264,124 @@
   <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-message-main&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     G‑Cloud 8 services will be available from 23 November 2015.
   <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+  
+  
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+        <div class="grid-row">
+            <div class="column-two-thirds">
+            
+            <div class="temporary-message-main">
+  <h3 class="temporary-message-heading-main">
+    G-Cloud X is open for applications
+  </h3>
+  <p class="temporary-message-message-main">
+    Example of a variant with a button.
+  </p>
+  <p class="temporary-message-message-main">
+    G-Cloud X is awesome and you can apply now. Just click the button
+  </p>
+  
+  
+    
+      <input type="submit" class="button-save-with-advice"  value="Apply" />
+    
+  
+</div>
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">button</span> <span style="color: #666666">=</span> <span style="color: #666666">{</span>
+    <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;save&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Apply&quot;</span>
+<span style="color: #666666">},</span>
+  <span style="color: #19177C">messages</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #BA2121">&quot;Example of a variant with a button.&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;G-Cloud X is awesome and you can apply now. Just click the button&quot;</span>
+<span style="color: #666666">],</span>
+  <span style="color: #19177C">grid</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;column-two-thirds&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">headingId</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;closed-notice&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">main</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;G-Cloud X is open for applications&quot;</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/temporary-message.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-main&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;h3</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-heading-main&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    G-Cloud X is open for applications
+  <span style="color: #008000; font-weight: bold">&lt;/h3&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-message-main&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    Example of a variant with a button.
+  <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-message-main&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    G-Cloud X is awesome and you can apply now. Just click the button
+  <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+  
+  
+    
+      <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;button-save-with-advice&quot;</span>  <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Apply&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+    
+  
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+        <div class="grid-row">
+            <div class="column-two-thirds">
+            
+            <div class="temporary-message-main">
+  <h3 class="temporary-message-heading-main">
+    Your G-Cloud X application
+  </h3>
+  <p class="temporary-message-message-main">
+    Example of a variant with a link.
+  </p>
+  <p class="temporary-message-message-main">
+    Deadline: Friday 28 September 2018
+  </p>
+  
+  <a href="http://www.digitalmarketplace.service.gov.uk">Continue your application</a>
+  
+  
+</div>
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">messages</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #BA2121">&quot;Example of a variant with a link.&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;Deadline: Friday 28 September 2018&quot;</span>
+<span style="color: #666666">],</span>
+  <span style="color: #19177C">grid</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;column-two-thirds&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">headingId</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;closed-notice&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">link</span> <span style="color: #666666">=</span> <span style="color: #666666">{</span>
+    <span style="color: #BA2121">&quot;url&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;http://www.digitalmarketplace.service.gov.uk&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Continue your application&quot;</span>
+<span style="color: #666666">},</span>
+  <span style="color: #19177C">main</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Your G-Cloud X application&quot;</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/temporary-message.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-main&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;h3</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-heading-main&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    Your G-Cloud X application
+  <span style="color: #008000; font-weight: bold">&lt;/h3&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-message-main&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    Example of a variant with a link.
+  <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-message-main&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    Deadline: Friday 28 September 2018
+  <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+  
+  <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;http://www.digitalmarketplace.service.gov.uk&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Continue your application<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+  
+  
 <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>

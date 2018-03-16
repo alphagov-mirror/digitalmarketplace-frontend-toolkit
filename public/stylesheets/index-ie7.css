@@ -2055,6 +2055,9 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 .temporary-message-main, .temporary-message-without-messages,
 .temporary-message {
   margin-bottom: 30px; }
+  .temporary-message-main input[type="submit"], .temporary-message-without-messages input[type="submit"],
+  .temporary-message input[type="submit"] {
+    margin-bottom: 5px; }
 
 .temporary-message-main {
   background: #d5e8f3;
@@ -2066,6 +2069,12 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
   font-size: 19px;
   line-height: 1.31579;
   color: #0b0c0c; }
+  .temporary-message-main a {
+    color: #005ea5; }
+    .temporary-message-main a:visited {
+      color: #4c2c92; }
+    .temporary-message-main a:hover, .temporary-message-main a:active {
+      color: #2b8cc4; }
 
 .temporary-message-without-messages {
   padding-bottom: 5px; }

@@ -198,8 +198,8 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">optional</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Optionally upload a file&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">optional</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-20&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/upload.html&quot;</span> <span style="color: #BC7A00">%}</span>
@@ -506,8 +506,8 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">link</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;https://assets.digitalmarketplace.service.gov.uk/documents/654321/1234123412341234-pricing-document.pdf&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Example of a link to the uploaded file&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">link</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;https://assets.digitalmarketplace.service.gov.uk/documents/654321/1234123412341234-pricing-document.pdf&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-50&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Excelsior_CMS-Pricing-2015.pdf&quot;</span>
 <span style="color: #BC7A00">%}</span>
@@ -682,8 +682,8 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">optional</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Optional with a bad upload&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">optional</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-70&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;The file you uploaded was too big &amp;ndash; maximum file size is 5Mb&quot;</span>
 <span style="color: #BC7A00">%}</span>
@@ -984,9 +984,9 @@ eg experience working on government digital projects<span style="color: #008000;
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">optional</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;This is a great file, thanks&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Optional with a message&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;This is a great file, thanks&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">optional</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-23&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/upload.html&quot;</span> <span style="color: #BC7A00">%}</span>

@@ -163,6 +163,10 @@ a.button-save {
   input.button-save {
     margin-top: 55px; } }
 
+@media (max-width: 640px) {
+  input.button-save {
+    margin-top: 30px; } }
+
 @media (min-width: 641px) {
   input.button-save-with-advice {
     margin-top: 20px; } }
@@ -851,6 +855,10 @@ a.button-save {
 @media (min-width: 641px) {
   input.button-save {
     margin-top: 55px; } }
+
+@media (max-width: 640px) {
+  input.button-save {
+    margin-top: 30px; } }
 
 @media (min-width: 641px) {
   input.button-save-with-advice {

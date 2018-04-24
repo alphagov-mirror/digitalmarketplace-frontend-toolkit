@@ -1347,9 +1347,6 @@ body {
       .banner-destructive-without-action .banner-content ul li, .banner-destructive-with-action .banner-content ul li, .banner-warning-with-action .banner-content ul li, .banner-warning-without-action .banner-content ul li, .banner-success-with-action .banner-content ul li, .banner-success-without-action .banner-content ul li, .banner-information-with-action .banner-content ul li, .banner-information-without-action .banner-content ul li, .banner-temporary-message-without-action .banner-content ul li {
         margin-bottom: 5px; }
 
-.flash-message-container.banner-destructive-without-action, .flash-message-container.banner-destructive-with-action, .flash-message-container.banner-warning-with-action, .flash-message-container.banner-warning-without-action, .flash-message-container.banner-success-with-action, .flash-message-container.banner-success-without-action, .flash-message-container.banner-information-with-action, .flash-message-container.banner-information-without-action, .flash-message-container.banner-temporary-message-without-action {
-  margin-bottom: 40px; }
-
 .banner-destructive-without-action, .banner-destructive-with-action {
   color: #b10e1e; }
 

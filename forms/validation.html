@@ -93,52 +93,55 @@
             <h1>Validation</h1>
         </header>
             
-            <div class="validation-masthead" aria-labelledby="validation-masthead-heading" aria-role="group" tabindex="-1">
-  <h1 class="validation-masthead-heading" id="validation-masthead-heading">
+            
+<div class="validation-masthead" aria-labelledby="validation-masthead-heading" aria-role="group" tabindex="-1">
+  <h2 class="validation-masthead-heading" id="validation-masthead-heading">
     There was a problem with your answer to:
-  </h1>
+  </h2>
   
   
     <a href="#example-textbox" class="validation-masthead-link">What was the name of your first pet?</a>
   
-    <a href="#example-textbox-2" class="validation-masthead-link">What street did you grow up on?</a>
+    <a href="#None" class="validation-masthead-link">What street did you grow up on?</a>
   
 </div>
+
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">errors</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
-    <span style="color: #666666">{</span>
+  <span style="color: #19177C">errors</span> <span style="color: #666666">=</span> <span style="color: #666666">{</span>
+    <span style="color: #BA2121">&quot;example-textbox&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;input_name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;example-textbox&quot;</span><span style="color: #666666">,</span> 
         <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;What was the name of your first pet?&quot;</span>
     <span style="color: #666666">},</span> 
-    <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;input_name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;example-textbox-2&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;example-textbox-2&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;input_name&quot;</span><span style="color: #666666">:</span> <span style="color: #19177C">null</span><span style="color: #666666">,</span> 
         <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;What street did you grow up on?&quot;</span>
     <span style="color: #666666">}</span>
-<span style="color: #666666">]</span>
+<span style="color: #666666">}</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/validation.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
             <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-masthead&quot;</span> <span style="color: #7D9029">aria-labelledby=</span><span style="color: #BA2121">&quot;validation-masthead-heading&quot;</span> <span style="color: #7D9029">aria-role=</span><span style="color: #BA2121">&quot;group&quot;</span> <span style="color: #7D9029">tabindex=</span><span style="color: #BA2121">&quot;-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-  <span style="color: #008000; font-weight: bold">&lt;h1</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-masthead-heading&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;validation-masthead-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-masthead-heading&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;validation-masthead-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     There was a problem with your answer to:
-  <span style="color: #008000; font-weight: bold">&lt;/h1&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
   
   
     <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#example-textbox&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-masthead-link&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>What was the name of your first pet?<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
   
-    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#example-textbox-2&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-masthead-link&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>What street did you grow up on?<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#None&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-masthead-link&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>What street did you grow up on?<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
   
 <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
             
-            <div class="validation-masthead" aria-labelledby="validation-masthead-heading" aria-role="group" tabindex="-1">
-  <h1 class="validation-masthead-heading" id="validation-masthead-heading">
+            
+<div class="validation-masthead" aria-labelledby="validation-masthead-heading" aria-role="group" tabindex="-1">
+  <h2 class="validation-masthead-heading" id="validation-masthead-heading">
     Something went wrong
-  </h1>
+  </h2>
   
     <p class="validation-masthead-description">
       Please make it right
@@ -148,14 +151,15 @@
     <a href="#example-textbox" class="validation-masthead-link">What was the name of your first pet?</a>
   
 </div>
+
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">errors</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
-    <span style="color: #666666">{</span>
+  <span style="color: #19177C">errors</span> <span style="color: #666666">=</span> <span style="color: #666666">{</span>
+    <span style="color: #BA2121">&quot;example-textbox&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;input_name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;example-textbox&quot;</span><span style="color: #666666">,</span> 
         <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;What was the name of your first pet?&quot;</span>
     <span style="color: #666666">}</span>
-<span style="color: #666666">],</span>
+<span style="color: #666666">},</span>
   <span style="color: #19177C">lede</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Something went wrong&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">description</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Please make it right&quot;</span>
 <span style="color: #BC7A00">%}</span>
@@ -164,9 +168,9 @@
 </pre></div>
 </div>
             <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-masthead&quot;</span> <span style="color: #7D9029">aria-labelledby=</span><span style="color: #BA2121">&quot;validation-masthead-heading&quot;</span> <span style="color: #7D9029">aria-role=</span><span style="color: #BA2121">&quot;group&quot;</span> <span style="color: #7D9029">tabindex=</span><span style="color: #BA2121">&quot;-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-  <span style="color: #008000; font-weight: bold">&lt;h1</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-masthead-heading&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;validation-masthead-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-masthead-heading&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;validation-masthead-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     Something went wrong
-  <span style="color: #008000; font-weight: bold">&lt;/h1&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
   
     <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-masthead-description&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       Please make it right

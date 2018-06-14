@@ -219,6 +219,59 @@
 </pre></div>
 </div>
         <div class="grid-row">
+            <div class="column-one-whole">
+            
+            <div class="temporary-message-banner">
+  <h3 class="temporary-message-heading">
+    A full width banner with a top margin
+  </h3>
+  <p class="temporary-message-message">
+    Temporary messages don't normally have a top margin.
+  </p>
+  <p class="temporary-message-message">
+    You can add one like this.
+  </p>
+  <p class="temporary-message-message">
+    It's useful for full width banner messages - it makes them play nicely with flash messages.
+  </p>
+  
+  
+</div>
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">messages</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #BA2121">&quot;Temporary messages don&#39;t normally have a top margin.&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;You can add one like this.&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;It&#39;s useful for full width banner messages - it makes them play nicely with flash messages.&quot;</span>
+<span style="color: #666666">],</span>
+  <span style="color: #19177C">banner</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;A full width banner with a top margin&quot;</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/temporary-message.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-banner&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;h3</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    A full width banner with a top margin
+  <span style="color: #008000; font-weight: bold">&lt;/h3&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    Temporary messages don&#39;t normally have a top margin.
+  <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    You can add one like this.
+  <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    It&#39;s useful for full width banner messages - it makes them play nicely with flash messages.
+  <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+  
+  
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+        <div class="grid-row">
             <div class="column-one-third">
             
             <div class="temporary-message-main">

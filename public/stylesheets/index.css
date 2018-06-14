@@ -1,15 +1,15 @@
 /* Blocks shared between multiple selectors */
-.banner-temporary-message-without-action, .temporary-message-main, .temporary-message-without-messages,
+.banner-temporary-message-without-action, .temporary-message-main, .temporary-message-without-messages, .temporary-message-banner,
 .temporary-message {
   background: #005ea5;
   color: #fff;
   padding: 15px 15px 18px 15px; }
-  .banner-temporary-message-without-action a, .temporary-message-main a, .temporary-message-without-messages a,
-  .temporary-message a, .banner-temporary-message-without-action a:visited, .temporary-message-main a:visited, .temporary-message-without-messages a:visited,
+  .banner-temporary-message-without-action a, .temporary-message-main a, .temporary-message-without-messages a, .temporary-message-banner a,
+  .temporary-message a, .banner-temporary-message-without-action a:visited, .temporary-message-main a:visited, .temporary-message-without-messages a:visited, .temporary-message-banner a:visited,
   .temporary-message a:visited {
     color: #fff; }
-  .banner-temporary-message-without-action a:hover, .temporary-message-main a:hover, .temporary-message-without-messages a:hover,
-  .temporary-message a:hover, .banner-temporary-message-without-action a:active, .temporary-message-main a:active, .temporary-message-without-messages a:active,
+  .banner-temporary-message-without-action a:hover, .temporary-message-main a:hover, .temporary-message-without-messages a:hover, .temporary-message-banner a:hover,
+  .temporary-message a:hover, .banner-temporary-message-without-action a:active, .temporary-message-main a:active, .temporary-message-without-messages a:active, .temporary-message-banner a:active,
   .temporary-message a:active {
     color: #96c6e2; }
 
@@ -2146,10 +2146,10 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
   display: block;
   clear: both; }
 
-.temporary-message-main, .temporary-message-without-messages,
+.temporary-message-main, .temporary-message-without-messages, .temporary-message-banner,
 .temporary-message {
   margin-bottom: 30px; }
-  .temporary-message-main input[type="submit"], .temporary-message-without-messages input[type="submit"],
+  .temporary-message-main input[type="submit"], .temporary-message-without-messages input[type="submit"], .temporary-message-banner input[type="submit"],
   .temporary-message input[type="submit"] {
     margin-bottom: 5px; }
 
@@ -2174,6 +2174,9 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 
 .temporary-message-without-messages {
   padding-bottom: 5px; }
+
+.temporary-message-banner {
+  margin-top: 15px; }
 
 .temporary-message-heading {
   font-family: "nta", Arial, sans-serif;

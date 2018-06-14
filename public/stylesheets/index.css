@@ -2240,9 +2240,10 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
     .user-research-banner .wrapper a {
       color: #fff; }
     .user-research-banner .wrapper p {
-      margin-bottom: 20px; }
-    .user-research-banner .wrapper .banner-heading {
-      font-size: 24px; }
+      margin-bottom: 10px;
+      font-size: 19px; }
+    .user-research-banner .wrapper p:last-child {
+      margin-bottom: 0; }
     .user-research-banner .wrapper .user-research-banner-close-btn {
       float: right; }
 

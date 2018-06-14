@@ -105,6 +105,17 @@
 
 
 
+  <meta name="ga_customDimension" data-id="11" data-value="small">
+
+
+
+
+  <meta name="ga_customDimension" data-id="12" data-value="User research banner">
+
+
+
+
+
   <meta name="ga_customDimension" data-id="8" data-value="save_and_refine_search">
 
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
@@ -115,15 +126,31 @@
         <span style="color: #BA2121">&quot;data_id&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">8</span>
     <span style="color: #666666">}</span>
 <span style="color: #666666">],</span>
+  <span style="color: #19177C">request</span> <span style="color: #666666">=</span> <span style="color: #666666">{</span>
+    <span style="color: #BA2121">&quot;cookies&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;&quot;</span>
+<span style="color: #666666">},</span>
   <span style="color: #19177C">current_user</span> <span style="color: #666666">=</span> <span style="color: #666666">{</span>
+    <span style="color: #BA2121">&quot;supplier_organisation_size&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;small&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;user_research_opted_in&quot;</span><span style="color: #666666">:</span> <span style="color: #008000">false</span><span style="color: #666666">,</span> 
     <span style="color: #BA2121">&quot;role&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;buyer&quot;</span>
 <span style="color: #666666">}</span>
 <span style="color: #BC7A00">%}</span>
-  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/custom-dimensions.html&quot;</span> <span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/layouts/_custom_dimensions.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
             <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;meta</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;ga_customDimension&quot;</span> <span style="color: #7D9029">data-id=</span><span style="color: #BA2121">&quot;10&quot;</span> <span style="color: #7D9029">data-value=</span><span style="color: #BA2121">&quot;buyer&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+
+
+
+
+  <span style="color: #008000; font-weight: bold">&lt;meta</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;ga_customDimension&quot;</span> <span style="color: #7D9029">data-id=</span><span style="color: #BA2121">&quot;11&quot;</span> <span style="color: #7D9029">data-value=</span><span style="color: #BA2121">&quot;small&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+
+
+
+
+  <span style="color: #008000; font-weight: bold">&lt;meta</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;ga_customDimension&quot;</span> <span style="color: #7D9029">data-id=</span><span style="color: #BA2121">&quot;12&quot;</span> <span style="color: #7D9029">data-value=</span><span style="color: #BA2121">&quot;User research banner&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+
 
 
 
@@ -139,17 +166,36 @@
 
 
 
+  <meta name="ga_customDimension" data-id="11" data-value="medium">
+
+
+
+
+
+
+
+
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">request</span> <span style="color: #666666">=</span> <span style="color: #666666">{</span>
+    <span style="color: #BA2121">&quot;cookies&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;&quot;</span>
+<span style="color: #666666">},</span>
   <span style="color: #19177C">current_user</span> <span style="color: #666666">=</span> <span style="color: #666666">{</span>
+    <span style="color: #BA2121">&quot;supplier_organisation_size&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;medium&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;user_research_opted_in&quot;</span><span style="color: #666666">:</span> <span style="color: #008000">true</span><span style="color: #666666">,</span> 
     <span style="color: #BA2121">&quot;role&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;supplier&quot;</span>
 <span style="color: #666666">}</span>
 <span style="color: #BC7A00">%}</span>
-  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/custom-dimensions.html&quot;</span> <span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/layouts/_custom_dimensions.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
             <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;meta</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;ga_customDimension&quot;</span> <span style="color: #7D9029">data-id=</span><span style="color: #BA2121">&quot;10&quot;</span> <span style="color: #7D9029">data-value=</span><span style="color: #BA2121">&quot;supplier&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+
+
+
+
+  <span style="color: #008000; font-weight: bold">&lt;meta</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;ga_customDimension&quot;</span> <span style="color: #7D9029">data-id=</span><span style="color: #BA2121">&quot;11&quot;</span> <span style="color: #7D9029">data-value=</span><span style="color: #BA2121">&quot;medium&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
 </pre></div>
 </div>
     </div>

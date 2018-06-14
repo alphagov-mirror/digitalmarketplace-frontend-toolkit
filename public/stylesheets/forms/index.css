@@ -640,6 +640,22 @@ body {
   .list-bullet li {
     margin-bottom: 5px; }
 
+.list-bullet-small {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 1.14286;
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 5px; }
+  @media (min-width: 641px) {
+    .list-bullet-small {
+      font-size: 16px;
+      line-height: 1.25; } }
+  .list-bullet-small li {
+    margin-bottom: 5px; }
+
 .list-number {
   list-style-type: decimal;
   padding-left: 20px;
@@ -948,6 +964,22 @@ body {
   padding-left: 20px;
   margin-top: 5px; }
   .list-bullet li {
+    margin-bottom: 5px; }
+
+.list-bullet-small {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 1.14286;
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 5px; }
+  @media (min-width: 641px) {
+    .list-bullet-small {
+      font-size: 16px;
+      line-height: 1.25; } }
+  .list-bullet-small li {
     margin-bottom: 5px; }
 
 .list-number {

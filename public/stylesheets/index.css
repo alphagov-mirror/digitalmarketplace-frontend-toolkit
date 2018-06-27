@@ -4135,23 +4135,21 @@ a.summary-item-remove-link {
       .validation-masthead .validation-masthead-description {
         padding-top: 0;
         padding-bottom: 5px; } }
-  .validation-masthead .validation-masthead-link,
-  .validation-masthead .validation-masthead-link:link,
-  .validation-masthead .validation-masthead-link:visited {
+  .validation-masthead .validation-masthead-link {
     display: block;
     font-family: "nta", Arial, sans-serif;
     font-weight: 400;
     text-transform: none;
     font-size: 16px;
-    line-height: 1.25;
-    font-weight: bold;
-    color: #b10e1e; }
+    line-height: 1.25; }
     @media (min-width: 641px) {
-      .validation-masthead .validation-masthead-link,
-      .validation-masthead .validation-masthead-link:link,
-      .validation-masthead .validation-masthead-link:visited {
+      .validation-masthead .validation-masthead-link {
         font-size: 19px;
         line-height: 1.31579; } }
+  .validation-masthead :link,
+  .validation-masthead :visited {
+    font-weight: bold;
+    color: #b10e1e; }
 
 .validation-wrapper, .message-wrapper {
   border-left: 5px solid #b10e1e;

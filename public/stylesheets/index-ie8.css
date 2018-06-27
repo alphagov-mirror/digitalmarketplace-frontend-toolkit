@@ -3782,9 +3782,7 @@ a.summary-item-remove-link {
     padding-top: 0;
     padding-bottom: 5px;
     margin-bottom: 5px; }
-  .validation-masthead .validation-masthead-link,
-  .validation-masthead .validation-masthead-link:link,
-  .validation-masthead .validation-masthead-link:visited {
+  .validation-masthead .validation-masthead-link {
     display: block;
     font-family: "nta", Arial, sans-serif;
     font-weight: 400;
@@ -3792,7 +3790,9 @@ a.summary-item-remove-link {
     font-size: 16px;
     line-height: 1.25;
     font-size: 19px;
-    line-height: 1.31579;
+    line-height: 1.31579; }
+  .validation-masthead :link,
+  .validation-masthead :visited {
     font-weight: bold;
     color: #b10e1e; }
 

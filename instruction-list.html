@@ -186,15 +186,15 @@
   <span style="color: #19177C">items</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Eligible specialist in unspecified locations will be notified immediately.&quot;</span>
-    <span style="color: #666666">},</span> 
+    <span style="color: #666666">},</span>
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;The requirements will be live for 7 days.&quot;</span>
-    <span style="color: #666666">},</span> 
+    <span style="color: #666666">},</span>
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Specialists will be able to ask you questions for the next 4 days.&quot;</span><span style="color: #666666">,</span> 
-        <span style="color: #BA2121">&quot;important&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;You must answer all questions before the requirements closes or you may be subject to legal challenge.&quot;</span><span style="color: #666666">,</span> 
-        <span style="color: #BA2121">&quot;bottom&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Questions will be sent to CCS&quot;</span>
-    <span style="color: #666666">},</span> 
+        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Specialists will be able to ask you questions for the next 4 days.&quot;</span><span style="color: #666666">,</span>
+        <span style="color: #BA2121">&quot;bottom&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Questions will be sent to CCS&quot;</span><span style="color: #666666">,</span>
+        <span style="color: #BA2121">&quot;important&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;You must answer all questions before the requirements closes or you may be subject to legal challenge.&quot;</span>
+    <span style="color: #666666">},</span>
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;You must then invite the top qualifiying specialists for DOS&quot;</span>
     <span style="color: #666666">}</span>
@@ -473,72 +473,72 @@
   </ol>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">start</span> <span style="color: #666666">=</span> <span style="color: #666666">4,</span>
-  <span style="color: #19177C">verbose</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
   <span style="color: #19177C">items</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Download your framework agreement&quot;</span><span style="color: #666666">,</span> 
         <span style="color: #BA2121">&quot;documents&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
             <span style="color: #666666">{</span>
-                <span style="color: #BA2121">&quot;file_type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;PDF&quot;</span><span style="color: #666666">,</span> 
-                <span style="color: #BA2121">&quot;download&quot;</span><span style="color: #666666">:</span> <span style="color: #008000">true</span><span style="color: #666666">,</span> 
-                <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#&quot;</span><span style="color: #666666">,</span> 
-                <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Document definition&quot;</span>
+                <span style="color: #BA2121">&quot;file_type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;PDF&quot;</span><span style="color: #666666">,</span>
+                <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Document definition&quot;</span><span style="color: #666666">,</span>
+                <span style="color: #BA2121">&quot;download&quot;</span><span style="color: #666666">:</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+                <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#&quot;</span>
             <span style="color: #666666">}</span>
-        <span style="color: #666666">]</span>
-    <span style="color: #666666">},</span> 
+        <span style="color: #666666">],</span>
+        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Download your framework agreement&quot;</span>
+    <span style="color: #666666">},</span>
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Read your framework agreement&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Read your framework agreement&quot;</span><span style="color: #666666">,</span>
         <span style="color: #BA2121">&quot;top&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;If you have a question about your framework agreement, contact CCS.&quot;</span>
-    <span style="color: #666666">},</span> 
+    <span style="color: #666666">},</span>
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Sign your framework agreement&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Sign your framework agreement&quot;</span><span style="color: #666666">,</span>
+        <span style="color: #BA2121">&quot;bottom&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Please don&#39;t send paper copies to CCS.\n&quot;</span><span style="color: #666666">,</span>
         <span style="color: #BA2121">&quot;sublist_collection&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
             <span style="color: #666666">{</span>
                 <span style="color: #BA2121">&quot;sublists&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
                     <span style="color: #666666">{</span>
                         <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Use &lt;strong&gt;Adobe Reader&lt;/strong&gt; to open your Digital Outcomes and Specialists framework agreement.&quot;</span>
-                    <span style="color: #666666">},</span> 
+                    <span style="color: #666666">},</span>
                     <span style="color: #666666">{</span>
                         <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Go to page 5 and click the first signature box.&quot;</span>
-                    <span style="color: #666666">},</span> 
+                    <span style="color: #666666">},</span>
                     <span style="color: #666666">{</span>
                         <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Use an existing digital ID or create a new one.&quot;</span>
-                    <span style="color: #666666">},</span> 
+                    <span style="color: #666666">},</span>
                     <span style="color: #666666">{</span>
                         <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Enter your name, email and organisation details.&quot;</span>
                     <span style="color: #666666">}</span>
-                <span style="color: #666666">],</span> 
+                <span style="color: #666666">],</span>
                 <span style="color: #BA2121">&quot;lead_in&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;To digitally sign your framework agreement, you need to:&quot;</span>
-            <span style="color: #666666">},</span> 
+            <span style="color: #666666">},</span>
             <span style="color: #666666">{</span>
-                <span style="color: #BA2121">&quot;start&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;10&quot;</span><span style="color: #666666">,</span> 
                 <span style="color: #BA2121">&quot;sublists&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
                     <span style="color: #666666">{</span>
                         <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Go to page 5 and click the first signature box.&quot;</span>
-                    <span style="color: #666666">},</span> 
+                    <span style="color: #666666">},</span>
                     <span style="color: #666666">{</span>
                         <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Use an existing digital ID or create a new one.&quot;</span>
-                    <span style="color: #666666">},</span> 
+                    <span style="color: #666666">},</span>
                     <span style="color: #666666">{</span>
                         <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Enter your name, email and organisation details.&quot;</span>
                     <span style="color: #666666">}</span>
-                <span style="color: #666666">],</span> 
+                <span style="color: #666666">],</span>
+                <span style="color: #BA2121">&quot;start&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;10&quot;</span><span style="color: #666666">,</span>
                 <span style="color: #BA2121">&quot;lead_in&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;If you can\u2019t digitally sign your framework agreement:&quot;</span>
             <span style="color: #666666">}</span>
-        <span style="color: #666666">],</span> 
-        <span style="color: #BA2121">&quot;bottom&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Please don&#39;t send paper copies to CCS.\n&quot;</span>
-    <span style="color: #666666">},</span> 
+        <span style="color: #666666">]</span>
+    <span style="color: #666666">},</span>
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Upload your signed framework agreement&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Upload your signed framework agreement&quot;</span><span style="color: #666666">,</span>
         <span style="color: #BA2121">&quot;uploads&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
             <span style="color: #666666">{</span>
-                <span style="color: #BA2121">&quot;file_type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;PDF&quot;</span><span style="color: #666666">,</span> 
-                <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;test&quot;</span>
+                <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;test&quot;</span><span style="color: #666666">,</span>
+                <span style="color: #BA2121">&quot;file_type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;PDF&quot;</span>
             <span style="color: #666666">}</span>
         <span style="color: #666666">]</span>
     <span style="color: #666666">}</span>
-<span style="color: #666666">]</span>
+<span style="color: #666666">],</span>
+  <span style="color: #19177C">start</span> <span style="color: #666666">=</span> <span style="color: #666666">4,</span>
+  <span style="color: #19177C">verbose</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/instruction-list.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -802,20 +802,20 @@
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">items</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Arrange for the framework agreement signature page to be signed.&quot;</span><span style="color: #666666">,</span> 
-        <span style="color: #BA2121">&quot;top&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;You must return the signature page as a PDF, JPG or PNG file.&quot;</span><span style="color: #666666">,</span> 
         <span style="color: #BA2121">&quot;documents&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
             <span style="color: #666666">{</span>
-                <span style="color: #BA2121">&quot;file_type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;HTML&quot;</span><span style="color: #666666">,</span> 
-                <span style="color: #BA2121">&quot;download&quot;</span><span style="color: #666666">:</span> <span style="color: #008000">false</span><span style="color: #666666">,</span> 
-                <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#&quot;</span><span style="color: #666666">,</span> 
-                <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Signature page&quot;</span>
+                <span style="color: #BA2121">&quot;file_type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;HTML&quot;</span><span style="color: #666666">,</span>
+                <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Signature page&quot;</span><span style="color: #666666">,</span>
+                <span style="color: #BA2121">&quot;download&quot;</span><span style="color: #666666">:</span> <span style="color: #008000">false</span><span style="color: #666666">,</span>
+                <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#&quot;</span>
             <span style="color: #666666">}</span>
-        <span style="color: #666666">],</span> 
+        <span style="color: #666666">],</span>
+        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Arrange for the framework agreement signature page to be signed.&quot;</span><span style="color: #666666">,</span>
+        <span style="color: #BA2121">&quot;top&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;You must return the signature page as a PDF, JPG or PNG file.&quot;</span><span style="color: #666666">,</span>
         <span style="color: #BA2121">&quot;bottom&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;You can review the &lt;a href=\&quot;https://www.gov.uk/government/publications/digital-outcomes-and-specialists-framework-agreement\&quot;&gt;framework agreement terms&lt;/a&gt; on GOV.UK.\n&quot;</span>
-    <span style="color: #666666">},</span> 
+    <span style="color: #666666">},</span>
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Read your signed signature page and details of the person who signed it.&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Read your signed signature page and details of the person who signed it.&quot;</span><span style="color: #666666">,</span>
         <span style="color: #BA2121">&quot;bottom&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;&lt;a href=\&quot;http://example.com\&quot;&gt;&lt;strong&gt;Return your signed signature page&lt;/strong&gt;&lt;/a&gt;\n&quot;</span>
     <span style="color: #666666">}</span>
 <span style="color: #666666">],</span>
@@ -1009,53 +1009,53 @@
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">items</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Write a list of your requirements&quot;</span><span style="color: #666666">,</span> 
         <span style="color: #BA2121">&quot;custom_body_list&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
             <span style="color: #666666">{</span>
-                <span style="color: #BA2121">&quot;text&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Work with buyers, someone who will use the service and technical experts to prepare a list of \u2018must-haves\u2019 and \u2018wants\u2019. These should inform your search category, keywords and filters.\n&quot;</span><span style="color: #666666">,</span> 
+                <span style="color: #BA2121">&quot;text&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Work with buyers, someone who will use the service and technical experts to prepare a list of \u2018must-haves\u2019 and \u2018wants\u2019. These should inform your search category, keywords and filters.\n&quot;</span><span style="color: #666666">,</span>
                 <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;text&quot;</span>
-            <span style="color: #666666">},</span> 
+            <span style="color: #666666">},</span>
             <span style="color: #666666">{</span>
-                <span style="color: #BA2121">&quot;text&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;You can also &lt;a href=\&quot;https://www.gov.uk/guidance/talking-to-suppliers-before-you-buy-digital-marketplace-services\&quot; target=\&quot;_blank\&quot; rel=\&quot;external noopener noreferrer\&quot; data-analytics=\&quot;trackEvent\&quot; data-analytics-category=\&quot;Direct Award\&quot; data-analytics-action=\&quot;External Link\&quot;&gt;talk to suppliers before you start&lt;/a&gt; to help you refine your requirements.\n&quot;</span><span style="color: #666666">,</span> 
+                <span style="color: #BA2121">&quot;text&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;You can also &lt;a href=\&quot;https://www.gov.uk/guidance/talking-to-suppliers-before-you-buy-digital-marketplace-services\&quot; target=\&quot;_blank\&quot; rel=\&quot;external noopener noreferrer\&quot; data-analytics=\&quot;trackEvent\&quot; data-analytics-category=\&quot;Direct Award\&quot; data-analytics-action=\&quot;External Link\&quot;&gt;talk to suppliers before you start&lt;/a&gt; to help you refine your requirements.\n&quot;</span><span style="color: #666666">,</span>
                 <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;text&quot;</span>
             <span style="color: #666666">}</span>
-        <span style="color: #666666">]</span>
-    <span style="color: #666666">},</span> 
+        <span style="color: #666666">],</span>
+        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Write a list of your requirements&quot;</span>
+    <span style="color: #666666">},</span>
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Save your search&quot;</span><span style="color: #666666">,</span> 
         <span style="color: #BA2121">&quot;custom_body_list&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
             <span style="color: #666666">{</span>
-                <span style="color: #BA2121">&quot;text&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;&lt;span class=\&quot;search-summary-count\&quot;&gt;1&lt;/span&gt; result found containing &lt;em&gt;test&lt;/em&gt; in &lt;em&gt;Cloud software&lt;/em&gt;\n&quot;</span><span style="color: #666666">,</span> 
+                <span style="color: #BA2121">&quot;text&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;&lt;span class=\&quot;search-summary-count\&quot;&gt;1&lt;/span&gt; result found containing &lt;em&gt;test&lt;/em&gt; in &lt;em&gt;Cloud software&lt;/em&gt;\n&quot;</span><span style="color: #666666">,</span>
                 <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;text&quot;</span>
-            <span style="color: #666666">},</span> 
+            <span style="color: #666666">},</span>
             <span style="color: #666666">{</span>
-                <span style="color: #BA2121">&quot;text&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;View Results&lt;/a&gt;\n&quot;</span><span style="color: #666666">,</span> 
+                <span style="color: #BA2121">&quot;text&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;View Results&lt;/a&gt;\n&quot;</span><span style="color: #666666">,</span>
                 <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;text&quot;</span>
-            <span style="color: #666666">},</span> 
+            <span style="color: #666666">},</span>
             <span style="color: #666666">{</span>
-                <span style="color: #BA2121">&quot;style&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;style&quot;</span><span style="color: #666666">,</span> 
-                <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;box&quot;</span><span style="color: #666666">,</span> 
-                <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Search saved on Tuesday 17 October 2017 at 9:18am GMT&quot;</span>
+                <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Search saved on Tuesday 17 October 2017 at 9:18am GMT&quot;</span><span style="color: #666666">,</span>
+                <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;box&quot;</span><span style="color: #666666">,</span>
+                <span style="color: #BA2121">&quot;style&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;style&quot;</span>
             <span style="color: #666666">}</span>
-        <span style="color: #666666">]</span>
-    <span style="color: #666666">},</span> 
+        <span style="color: #666666">],</span>
+        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Save your search&quot;</span>
+    <span style="color: #666666">},</span>
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;End your search&quot;</span><span style="color: #666666">,</span> 
         <span style="color: #BA2121">&quot;custom_body_list&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
             <span style="color: #666666">{</span>
-                <span style="color: #BA2121">&quot;text&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;End your search to create a spreadsheet of the services you\u2019ve found. You should only do this when you have finished searching for services.\n&quot;</span><span style="color: #666666">,</span> 
+                <span style="color: #BA2121">&quot;text&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;End your search to create a spreadsheet of the services you\u2019ve found. You should only do this when you have finished searching for services.\n&quot;</span><span style="color: #666666">,</span>
                 <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;text&quot;</span>
-            <span style="color: #666666">},</span> 
+            <span style="color: #666666">},</span>
             <span style="color: #666666">{</span>
-                <span style="color: #BA2121">&quot;analytics_label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;testLabel&quot;</span><span style="color: #666666">,</span> 
-                <span style="color: #BA2121">&quot;analytics&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;trackEvent&quot;</span><span style="color: #666666">,</span> 
-                <span style="color: #BA2121">&quot;href&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;/g-cloud/search/?q=test&quot;</span><span style="color: #666666">,</span> 
-                <span style="color: #BA2121">&quot;analytics_action&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;testAction&quot;</span><span style="color: #666666">,</span> 
-                <span style="color: #BA2121">&quot;analytics_category&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;testCategory&quot;</span><span style="color: #666666">,</span> 
-                <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;action&quot;</span><span style="color: #666666">,</span> 
-                <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;End Search&quot;</span>
+                <span style="color: #BA2121">&quot;analytics&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;trackEvent&quot;</span><span style="color: #666666">,</span>
+                <span style="color: #BA2121">&quot;analytics_action&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;testAction&quot;</span><span style="color: #666666">,</span>
+                <span style="color: #BA2121">&quot;href&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;/g-cloud/search/?q=test&quot;</span><span style="color: #666666">,</span>
+                <span style="color: #BA2121">&quot;analytics_category&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;testCategory&quot;</span><span style="color: #666666">,</span>
+                <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;End Search&quot;</span><span style="color: #666666">,</span>
+                <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;action&quot;</span><span style="color: #666666">,</span>
+                <span style="color: #BA2121">&quot;analytics_label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;testLabel&quot;</span>
             <span style="color: #666666">}</span>
-        <span style="color: #666666">]</span>
+        <span style="color: #666666">],</span>
+        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;End your search&quot;</span>
     <span style="color: #666666">}</span>
 <span style="color: #666666">],</span>
   <span style="color: #19177C">verbose</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span>

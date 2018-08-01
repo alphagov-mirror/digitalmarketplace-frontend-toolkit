@@ -110,9 +110,9 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;q-10&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">label</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Keywords&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">id</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;keywords&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;q-10&quot;</span>
+  <span style="color: #19177C">id</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;keywords&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/keyword-search.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -149,10 +149,10 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">label</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Keywords (maximum 50 characters)&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">id</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;keywords&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;q-20&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">maxLength</span> <span style="color: #666666">=</span> <span style="color: #666666">50</span>
+  <span style="color: #19177C">label</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Keywords (maximum 50 characters)&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">maxLength</span> <span style="color: #666666">=</span> <span style="color: #666666">50,</span>
+  <span style="color: #19177C">id</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;keywords&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/keyword-search.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>

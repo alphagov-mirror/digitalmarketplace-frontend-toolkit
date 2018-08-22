@@ -118,11 +118,11 @@
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">messages</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
-    <span style="color: #BA2121">&quot;Applications are being reviewed.&quot;</span><span style="color: #666666">,</span>
+    <span style="color: #BA2121">&quot;Applications are being reviewed.&quot;</span><span style="color: #666666">,</span> 
     <span style="color: #BA2121">&quot;G\u2011Cloud 7 services will be available from 23 November 2015.&quot;</span>
 <span style="color: #666666">],</span>
-  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;G\u2011Cloud 7 is closed for applications&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">grid</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;column-one-third&quot;</span>
+  <span style="color: #19177C">grid</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;column-one-third&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;G\u2011Cloud 7 is closed for applications&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/temporary-message.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -164,7 +164,7 @@
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">messages</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
-    <span style="color: #BA2121">&quot;No services were submitted because you didn\u2019t mark any as complete.&quot;</span><span style="color: #666666">,</span>
+    <span style="color: #BA2121">&quot;No services were submitted because you didn\u2019t mark any as complete.&quot;</span><span style="color: #666666">,</span> 
     <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;View your application&lt;/a&gt;&quot;</span>
 <span style="color: #666666">],</span>
   <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;The G-Cloud 7 application deadline has passed&quot;</span>
@@ -202,8 +202,8 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Example without any body copy that is quite long and may wrap onto multiple lines&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">grid</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;column-two-thirds&quot;</span>
+  <span style="color: #19177C">grid</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;column-two-thirds&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Example without any body copy that is quite long and may wrap onto multiple lines&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/temporary-message.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -242,8 +242,8 @@
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">messages</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
-    <span style="color: #BA2121">&quot;Temporary messages don&#39;t normally have a top margin.&quot;</span><span style="color: #666666">,</span>
-    <span style="color: #BA2121">&quot;You can add one like this.&quot;</span><span style="color: #666666">,</span>
+    <span style="color: #BA2121">&quot;Temporary messages don&#39;t normally have a top margin.&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;You can add one like this.&quot;</span><span style="color: #666666">,</span> 
     <span style="color: #BA2121">&quot;It&#39;s useful for full width banner messages - it makes them play nicely with flash messages.&quot;</span>
 <span style="color: #666666">],</span>
   <span style="color: #19177C">banner</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
@@ -292,12 +292,12 @@
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">messages</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
-    <span style="color: #BA2121">&quot;Example of variant used for main page already containing dark blue banner.&quot;</span><span style="color: #666666">,</span>
+    <span style="color: #BA2121">&quot;Example of variant used for main page already containing dark blue banner.&quot;</span><span style="color: #666666">,</span> 
     <span style="color: #BA2121">&quot;G\u2011Cloud 8 services will be available from 23 November 2015.&quot;</span>
 <span style="color: #666666">],</span>
-  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;G\u2011Cloud  is open for applications&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">main</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">grid</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;column-one-third&quot;</span>
+  <span style="color: #19177C">grid</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;column-one-third&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;G\u2011Cloud  is open for applications&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/temporary-message.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -353,17 +353,17 @@
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">header_level</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;h2&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">main</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;G-Cloud X is open for applications&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">grid</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;column-two-thirds&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">button</span> <span style="color: #666666">=</span> <span style="color: #666666">{</span>
+    <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;save&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Apply&quot;</span>
+<span style="color: #666666">},</span>
   <span style="color: #19177C">messages</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
-    <span style="color: #BA2121">&quot;Example of a variant with a button.&quot;</span><span style="color: #666666">,</span>
+    <span style="color: #BA2121">&quot;Example of a variant with a button.&quot;</span><span style="color: #666666">,</span> 
     <span style="color: #BA2121">&quot;G-Cloud X is awesome and you can apply now. Just click the button&quot;</span>
 <span style="color: #666666">],</span>
-  <span style="color: #19177C">button</span> <span style="color: #666666">=</span> <span style="color: #666666">{</span>
-    <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Apply&quot;</span><span style="color: #666666">,</span>
-    <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;save&quot;</span>
-<span style="color: #666666">}</span>
+  <span style="color: #19177C">grid</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;column-two-thirds&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">main</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;G-Cloud X is open for applications&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/temporary-message.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -421,17 +421,17 @@
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">header_level</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;h2&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">grid</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;column-two-thirds&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">link</span> <span style="color: #666666">=</span> <span style="color: #666666">{</span>
-    <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Continue your application&quot;</span><span style="color: #666666">,</span>
-    <span style="color: #BA2121">&quot;url&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;http://www.digitalmarketplace.service.gov.uk&quot;</span>
-<span style="color: #666666">},</span>
   <span style="color: #19177C">messages</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
-    <span style="color: #BA2121">&quot;Example of a variant with a link.&quot;</span><span style="color: #666666">,</span>
+    <span style="color: #BA2121">&quot;Example of a variant with a link.&quot;</span><span style="color: #666666">,</span> 
     <span style="color: #BA2121">&quot;Deadline: Friday 28 September 2018&quot;</span>
 <span style="color: #666666">],</span>
-  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Your G-Cloud X application&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">main</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span>
+  <span style="color: #19177C">link</span> <span style="color: #666666">=</span> <span style="color: #666666">{</span>
+    <span style="color: #BA2121">&quot;url&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;http://www.digitalmarketplace.service.gov.uk&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Continue your application&quot;</span>
+<span style="color: #666666">},</span>
+  <span style="color: #19177C">grid</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;column-two-thirds&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">main</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Your G-Cloud X application&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/temporary-message.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>

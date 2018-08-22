@@ -229,23 +229,23 @@
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;radio&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Radio buttons&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;minimumContractPeriod-10&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">options</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Hour&quot;</span><span style="color: #666666">,</span>
-        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Heure&quot;</span>
-    <span style="color: #666666">},</span>
+        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Heure&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Hour&quot;</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Day&quot;</span>
-    <span style="color: #666666">},</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Month&quot;</span>
-    <span style="color: #666666">},</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Year&quot;</span>
     <span style="color: #666666">}</span>
-<span style="color: #666666">],</span>
-  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Radio buttons&quot;</span>
+<span style="color: #666666">]</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/selection-buttons.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -468,15 +468,15 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;serviceStatus-20&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Inline radio buttons&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Public&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">inline</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;radio&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Inline radio buttons&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;serviceStatus-20&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">options</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Public&quot;</span>
-    <span style="color: #666666">},</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Private&quot;</span>
     <span style="color: #666666">}</span>
@@ -679,23 +679,23 @@
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;checkbox&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Choose a category&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;categories-30&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
-    <span style="color: #BA2121">&quot;Accounting and finance&quot;</span><span style="color: #666666">,</span>
+    <span style="color: #BA2121">&quot;Accounting and finance&quot;</span><span style="color: #666666">,</span> 
     <span style="color: #BA2121">&quot;Collaboration&quot;</span>
 <span style="color: #666666">],</span>
-  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;categories-30&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">options</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Accounting and finance&quot;</span>
-    <span style="color: #666666">},</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Business intelligence and analytics&quot;</span>
-    <span style="color: #666666">},</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Collaboration&quot;</span>
     <span style="color: #666666">}</span>
-<span style="color: #666666">],</span>
-  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Choose a category&quot;</span>
+<span style="color: #666666">]</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/selection-buttons.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -905,12 +905,12 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #008000">false</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;boolean&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;19&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Offline working supported&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;offlineWorking-40&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">question_advice</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;This is some more context to do with the question itself&quot;</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Offline working supported&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #008000">false</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_advice</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;This is some more context to do with the question itself&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;19&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;boolean&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/selection-buttons.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -1082,15 +1082,15 @@
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;radio&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Advice about how to answer the question&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Checkbox with hint and option description&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">options</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Infrastructure as a Service&quot;</span><span style="color: #666666">,</span>
-        <span style="color: #BA2121">&quot;description&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Infrastructure is the hardware that makes software work. It&#39;s the networks, hosting facilities and servers that platforms and software depend on. IaaS is infrastructure you can order and run entirely over the internet, without having to pay for your own hardware.\n&quot;</span>
+        <span style="color: #BA2121">&quot;description&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Infrastructure is the hardware that makes software work. It&#39;s the networks, hosting facilities and servers that platforms and software depend on. IaaS is infrastructure you can order and run entirely over the internet, without having to pay for your own hardware.\n&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Infrastructure as a Service&quot;</span>
     <span style="color: #666666">}</span>
 <span style="color: #666666">],</span>
-  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;lot-50&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Advice about how to answer the question&quot;</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;lot-50&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/selection-buttons.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -1335,34 +1335,34 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;lot-60&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Advice about how to answer the question&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">optional</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Optional radios with question advice, hint and option description&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_advice</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Advice about the question&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;radio&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">options</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Infrastructure as a Service (IaaS)&quot;</span><span style="color: #666666">,</span>
-        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;iaas&quot;</span><span style="color: #666666">,</span>
-        <span style="color: #BA2121">&quot;description&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Infrastructure is the hardware that makes software work. It\u2019s the networks, hosting facilities and servers that platforms and software depend on. IaaS is infrastructure you can order and run entirely over the internet, without having to pay for your own hardware.\n&quot;</span>
-    <span style="color: #666666">},</span>
+        <span style="color: #BA2121">&quot;description&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Infrastructure is the hardware that makes software work. It\u2019s the networks, hosting facilities and servers that platforms and software depend on. IaaS is infrastructure you can order and run entirely over the internet, without having to pay for your own hardware.\n&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;iaas&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Infrastructure as a Service (IaaS)&quot;</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Software as a Service (SaaS)&quot;</span><span style="color: #666666">,</span>
-        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;saas&quot;</span><span style="color: #666666">,</span>
-        <span style="color: #BA2121">&quot;description&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;SaaS is an application or service that can be run over the internet or in the cloud. Examples of SaaS include web-based email services, customer relationship management (CRM) software and analytics tools.\n&quot;</span>
-    <span style="color: #666666">},</span>
+        <span style="color: #BA2121">&quot;description&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;SaaS is an application or service that can be run over the internet or in the cloud. Examples of SaaS include web-based email services, customer relationship management (CRM) software and analytics tools.\n&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;saas&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Software as a Service (SaaS)&quot;</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Platform as a Service (PaaS)&quot;</span><span style="color: #666666">,</span>
-        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;paas&quot;</span><span style="color: #666666">,</span>
-        <span style="color: #BA2121">&quot;description&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;PaaS is a software platform that provides a basis for building other services and applications. With PaaS, you can set up, order, pay for and manage platforms in the cloud.\n&quot;</span>
-    <span style="color: #666666">},</span>
+        <span style="color: #BA2121">&quot;description&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;PaaS is a software platform that provides a basis for building other services and applications. With PaaS, you can set up, order, pay for and manage platforms in the cloud.\n&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;paas&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Platform as a Service (PaaS)&quot;</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Specialist Cloud Services (SCS)&quot;</span><span style="color: #666666">,</span>
-        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;scs&quot;</span><span style="color: #666666">,</span>
-        <span style="color: #BA2121">&quot;description&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Specialist Cloud Services support your transition to SaaS, PaaS and IaaS. Examples of SCS include cloud strategy, data transfer between providers, or day-to-day support of cloud-based services.\n&quot;</span>
+        <span style="color: #BA2121">&quot;description&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Specialist Cloud Services support your transition to SaaS, PaaS and IaaS. Examples of SCS include cloud strategy, data transfer between providers, or day-to-day support of cloud-based services.\n&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;scs&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Specialist Cloud Services (SCS)&quot;</span>
     <span style="color: #666666">}</span>
-<span style="color: #666666">],</span>
-  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Advice about how to answer the question&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Optional radios with question advice, hint and option description&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;radio&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">optional</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;lot-60&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">question_advice</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Advice about the question&quot;</span>
+<span style="color: #666666">]</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/selection-buttons.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -1658,23 +1658,23 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">description</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Description of the question&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Advice about how to answer the question&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Checkboxes with hint and question description&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_advice</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Advice about the question&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;checkbox&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">options</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Uber for supply teachers&quot;</span>
-    <span style="color: #666666">},</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Airbnb for potted plants&quot;</span>
-    <span style="color: #666666">},</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Tinder for expired cheeses and yoghurts&quot;</span>
     <span style="color: #666666">}</span>
 <span style="color: #666666">],</span>
-  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Advice about how to answer the question&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Checkboxes with hint and question description&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;checkbox&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;lot-70&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">description</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Description of the question&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">question_advice</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Advice about the question&quot;</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;lot-70&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/selection-buttons.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -1915,22 +1915,22 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;lot-80&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;The hint for this question only makes sense when it&#39;s underneath the options.&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">hint_underneath</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Is your service assured by&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;checkbox&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">options</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;service provider assertion&quot;</span>
-    <span style="color: #666666">},</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;independent validation of assertion&quot;</span>
-    <span style="color: #666666">},</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;independent testing of implementation&quot;</span>
     <span style="color: #666666">}</span>
-<span style="color: #666666">],</span>
-  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Is your service assured by&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;checkbox&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;lot-80&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;The hint for this question only makes sense when it&#39;s underneath the options.&quot;</span>
+<span style="color: #666666">]</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/selection-buttons.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -2172,17 +2172,17 @@
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;vegetables-90&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;checkbox&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #666666">77,</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Checkboxes with an error&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #666666">77,</span>
   <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Answer required&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;checkbox&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">options</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Carrot&quot;</span>
-    <span style="color: #666666">},</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Onion&quot;</span>
-    <span style="color: #666666">},</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Collaboration&quot;</span>
     <span style="color: #666666">}</span>
@@ -2483,24 +2483,24 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;trumpton-100&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Checkboxes with a message&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #666666">23,</span>
   <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Grubb required&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;checkbox&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #666666">23,</span>
-  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Checkboxes with a message&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;trumpton-100&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">options</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Pugh&quot;</span>
-    <span style="color: #666666">},</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Pugh&quot;</span>
-    <span style="color: #666666">},</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Barney McGrew&quot;</span>
-    <span style="color: #666666">},</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Cuthbert&quot;</span>
-    <span style="color: #666666">},</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Dibble&quot;</span>
     <span style="color: #666666">}</span>
@@ -2844,25 +2844,25 @@ eg experience working on government digital projects</p>
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;dont-110&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;p&gt;To find the best specialist to meet your needs, you should:&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;list as many types of skills and experience as you can&lt;/li&gt;\n&lt;li&gt;be specific about the skills and experience you&#39;re looking for&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;If too many suppliers have all the essential skills and experience, you\u2019ll use the nice-to-have skills and\nexperience to exclude suppliers.&lt;/p&gt;\n\n&lt;p&gt;You must tell suppliers if you want to score individual criteria.&lt;/p&gt;\n\n&lt;p&gt;&lt;a href=\&quot;https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria\&quot;&gt;Read more about how to set evaluation criteria&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;List the skills and experience you\u2019d like the specialist to have,\neg experience working on government digital projects&lt;/p&gt;\n&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;checkbox&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Optional checkboxes with an error despite loads of guidance&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_advice</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;p&gt;To find the best specialist to meet your needs, you should:&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;list as many types of skills and experience as you can&lt;/li&gt;\n&lt;li&gt;be specific about the skills and experience you&#39;re looking for&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;If too many suppliers have all the essential skills and experience, you\u2019ll use the nice-to-have skills and\nexperience to exclude suppliers.&lt;/p&gt;\n\n&lt;p&gt;You must tell suppliers if you want to score individual criteria.&lt;/p&gt;\n\n&lt;p&gt;&lt;a href=\&quot;https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria\&quot;&gt;Read more about how to set evaluation criteria&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;List the skills and experience you\u2019d like the specialist to have,\neg experience working on government digital projects&lt;/p&gt;\n&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #666666">77,</span>
   <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;From 12th January 1973 it will no longer be legal&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">optional</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
   <span style="color: #19177C">options</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Don\u2019t&quot;</span>
-    <span style="color: #666666">},</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Don\u2019t&quot;</span>
-    <span style="color: #666666">},</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Don\u2019t&quot;</span>
     <span style="color: #666666">}</span>
-<span style="color: #666666">],</span>
-  <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #666666">77,</span>
-  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Optional checkboxes with an error despite loads of guidance&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;checkbox&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">optional</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;dont-110&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">question_advice</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;p&gt;To find the best specialist to meet your needs, you should:&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;list as many types of skills and experience as you can&lt;/li&gt;\n&lt;li&gt;be specific about the skills and experience you&#39;re looking for&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;If too many suppliers have all the essential skills and experience, you\u2019ll use the nice-to-have skills and\nexperience to exclude suppliers.&lt;/p&gt;\n\n&lt;p&gt;You must tell suppliers if you want to score individual criteria.&lt;/p&gt;\n\n&lt;p&gt;&lt;a href=\&quot;https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria\&quot;&gt;Read more about how to set evaluation criteria&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;List the skills and experience you\u2019d like the specialist to have,\neg experience working on government digital projects&lt;/p&gt;\n&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;p&gt;To find the best specialist to meet your needs, you should:&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;list as many types of skills and experience as you can&lt;/li&gt;\n&lt;li&gt;be specific about the skills and experience you&#39;re looking for&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;If too many suppliers have all the essential skills and experience, you\u2019ll use the nice-to-have skills and\nexperience to exclude suppliers.&lt;/p&gt;\n\n&lt;p&gt;You must tell suppliers if you want to score individual criteria.&lt;/p&gt;\n\n&lt;p&gt;&lt;a href=\&quot;https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria\&quot;&gt;Read more about how to set evaluation criteria&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;List the skills and experience you\u2019d like the specialist to have,\neg experience working on government digital projects&lt;/p&gt;\n&quot;</span>
+<span style="color: #666666">]</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/selection-buttons.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -3164,15 +3164,15 @@ eg experience working on government digital projects<span style="color: #008000;
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;requirement-120&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #666666">93,</span>
-  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Can you do this essential requirement&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">followup</span> <span style="color: #666666">=</span> <span style="color: #666666">{</span>
     <span style="color: #BA2121">&quot;true&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
         <span style="color: #BA2121">&quot;requirement-evidence-110&quot;</span>
     <span style="color: #666666">]</span>
 <span style="color: #666666">},</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;requirement-120&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Can you do this essential requirement&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #666666">93,</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;boolean&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/selection-buttons.html&quot;</span> <span style="color: #BC7A00">%}</span>
@@ -3410,23 +3410,23 @@ eg experience working on government digital projects<span style="color: #008000;
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;radio&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Are you registered for VAT (conditionally revealing content)?&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;reveal-130&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">options</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Yes&quot;</span><span style="color: #666666">,</span>
         <span style="color: #BA2121">&quot;reveal&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">{</span>
-            <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;What is your VAT number?&quot;</span><span style="color: #666666">,</span>
-            <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;vat_number&quot;</span><span style="color: #666666">,</span>
+            <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;What is your VAT number?&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;vat_number&quot;</span><span style="color: #666666">,</span> 
             <span style="color: #BA2121">&quot;hint&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;It is made up of some digits&quot;</span>
-        <span style="color: #666666">},</span>
-        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #008000">true</span>
-    <span style="color: #666666">},</span>
+        <span style="color: #666666">},</span> 
+        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #008000">true</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Yes&quot;</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;No&quot;</span><span style="color: #666666">,</span>
-        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Not VAT registered&quot;</span>
+        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Not VAT registered&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;No&quot;</span>
     <span style="color: #666666">}</span>
-<span style="color: #666666">],</span>
-  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Are you registered for VAT (conditionally revealing content)?&quot;</span>
+<span style="color: #666666">]</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/selection-buttons.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -3635,26 +3635,26 @@ eg experience working on government digital projects<span style="color: #008000;
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;radio&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Are you registered for VAT (conditionally revealing content with an error)?&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;reveal-error-140&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
   <span style="color: #19177C">options</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Yes&quot;</span><span style="color: #666666">,</span>
         <span style="color: #BA2121">&quot;reveal&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">{</span>
-            <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Blurgh&quot;</span><span style="color: #666666">,</span>
-            <span style="color: #BA2121">&quot;error&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;You must enter a valid VAT number.&quot;</span><span style="color: #666666">,</span>
-            <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;What is your VAT number?&quot;</span><span style="color: #666666">,</span>
-            <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;vat_number_error&quot;</span><span style="color: #666666">,</span>
-            <span style="color: #BA2121">&quot;hint&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;It is made up of some digits&quot;</span>
-        <span style="color: #666666">},</span>
-        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #008000">true</span>
-    <span style="color: #666666">},</span>
+            <span style="color: #BA2121">&quot;hint&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;It is made up of some digits&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;What is your VAT number?&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;vat_number_error&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Blurgh&quot;</span><span style="color: #666666">,</span> 
+            <span style="color: #BA2121">&quot;error&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;You must enter a valid VAT number.&quot;</span>
+        <span style="color: #666666">},</span> 
+        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #008000">true</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Yes&quot;</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;No&quot;</span><span style="color: #666666">,</span>
-        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Not VAT registered&quot;</span>
+        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Not VAT registered&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;No&quot;</span>
     <span style="color: #666666">}</span>
-<span style="color: #666666">],</span>
-  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Are you registered for VAT (conditionally revealing content with an error)?&quot;</span>
+<span style="color: #666666">]</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/selection-buttons.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -3871,23 +3871,23 @@ eg experience working on government digital projects<span style="color: #008000;
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;radio&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">finally</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;or&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Radio box with \&quot;or\&quot; before the final option&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;finally-or-10&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">options</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
-        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #008000">true</span>
-    <span style="color: #666666">},</span>
+        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #008000">true</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #008000">true</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #008000">false</span><span style="color: #666666">,</span>
-        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #008000">false</span>
-    <span style="color: #666666">},</span>
+        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #008000">false</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #008000">false</span>
+    <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Maybe&quot;</span><span style="color: #666666">,</span>
-        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;maybe&quot;</span>
+        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;maybe&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Maybe&quot;</span>
     <span style="color: #666666">}</span>
-<span style="color: #666666">],</span>
-  <span style="color: #19177C">finally</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;or&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Radio box with \&quot;or\&quot; before the final option&quot;</span>
+<span style="color: #666666">]</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/selection-buttons.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>

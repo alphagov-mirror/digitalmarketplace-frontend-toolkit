@@ -119,15 +119,15 @@ https://github.com/alphagov/static/blob/a9d462e71709d2ff6348bcce7e8c625af2b86114
 </nav>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">previous_page</span> <span style="color: #666666">=</span> <span style="color: #666666">{</span>
-    <span style="color: #BA2121">&quot;url&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#&quot;</span><span style="color: #666666">,</span> 
-    <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Previous page&quot;</span><span style="color: #666666">,</span> 
-    <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;1 of 3&quot;</span>
-<span style="color: #666666">},</span>
   <span style="color: #19177C">next_page</span> <span style="color: #666666">=</span> <span style="color: #666666">{</span>
-    <span style="color: #BA2121">&quot;url&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#&quot;</span><span style="color: #666666">,</span> 
-    <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Next page&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;url&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#&quot;</span><span style="color: #666666">,</span>
+    <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Next page&quot;</span><span style="color: #666666">,</span>
     <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;3 of 3&quot;</span>
+<span style="color: #666666">},</span>
+  <span style="color: #19177C">previous_page</span> <span style="color: #666666">=</span> <span style="color: #666666">{</span>
+    <span style="color: #BA2121">&quot;url&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#&quot;</span><span style="color: #666666">,</span>
+    <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Previous page&quot;</span><span style="color: #666666">,</span>
+    <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;1 of 3&quot;</span>
 <span style="color: #666666">}</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/previous-next-navigation.html&quot;</span> <span style="color: #BC7A00">%}</span>

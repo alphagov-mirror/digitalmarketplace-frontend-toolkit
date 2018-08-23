@@ -115,6 +115,10 @@
           <a href="#">Help</a>
         </li>
         
+
+        
+
+        
         <li>
           <a href="#">Log in</a>
         </li>
@@ -162,6 +166,10 @@
           <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Help<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
         <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
         
+
+        
+
+        
         <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
           <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Log in<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
         <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
@@ -197,17 +205,13 @@
         <li>
           <a href="#">Help</a>
         </li>
-         
-        <li>
-          <a href="#">View your account</a>
-        </li>
-         
+        
+
+        
+
         
         <li>
-          <form method="post" action="#">
-            <input type="submit" class="logout-button" value="Log out" />
-            <input type="hidden" name="csrf_token" value="token_set_for_documentation_only" />
-          </form>
+          <a href="#">Log in</a>
         </li>
         
       </ul>
@@ -226,7 +230,7 @@
         &lt;a href=&quot;#&quot; title=&quot;&quot; id=&quot;logo&quot; class=&quot;content&quot;&gt;&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-    <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">with</span> <span style="color: #19177C">logged_in</span><span style="color: #666666">=</span><span style="color: #008000">True</span><span style="color: #666666">,</span> <span style="color: #19177C">role</span><span style="color: #666666">=</span><span style="color: #BA2121">&#39;buyer&#39;</span> <span style="color: #BC7A00">%}</span>
+    <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">with</span> <span style="color: #19177C">current_user</span><span style="color: #666666">=</span><span style="color: #008000">None</span> <span style="color: #BC7A00">%}</span>
       <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;proposition-header.html&quot;</span> <span style="color: #BC7A00">%}</span>
     <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
   &lt;/div&gt;
@@ -252,17 +256,13 @@
         <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
           <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Help<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
         <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
-         
-        <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>View your account<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
-        <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
-         
+        
+
+        
+
         
         <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;form</span> <span style="color: #7D9029">method=</span><span style="color: #BA2121">&quot;post&quot;</span> <span style="color: #7D9029">action=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-            <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;logout-button&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Log out&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
-            <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;hidden&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;csrf_token&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;token_set_for_documentation_only&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;/form&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Log in<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
         <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
         
       <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
@@ -296,117 +296,23 @@
         <li>
           <a href="#">Help</a>
         </li>
-         
-        <li>
-          <a href="#">View your account</a>
-        </li>
-         
         
-        <li>
-          <form method="post" action="#">
-            <input type="submit" class="logout-button" value="Log out" />
-            <input type="hidden" name="csrf_token" value="token_set_for_documentation_only" />
-          </form>
-        </li>
-        
-      </ul>
-    </nav>
-  </div>
-</div>
-    
-  </div>
-</header>
-            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">macro</span> <span style="color: #19177C">url_for</span><span style="color: #666666">(</span><span style="color: #19177C">mocked_link_for_documentation_only</span><span style="color: #666666">)</span> <span style="color: #BC7A00">%}</span>#<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endmacro</span> <span style="color: #BC7A00">%}</span>
-<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">set</span> <span style="color: #19177C">csrf_token_value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;token_set_for_documentation_only&#39;</span> <span style="color: #BC7A00">%}</span>
-&lt;header role=&quot;banner&quot; id=&quot;global-header&quot; class=&quot;&quot;&gt;
-  &lt;div class=&quot;header-wrapper&quot;&gt;
-    &lt;div class=&quot;header-global&quot;&gt;
-      &lt;div class=&quot;header-logo&quot;&gt;
-        &lt;a href=&quot;#&quot; title=&quot;&quot; id=&quot;logo&quot; class=&quot;content&quot;&gt;&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">with</span> <span style="color: #19177C">logged_in</span><span style="color: #666666">=</span><span style="color: #008000">True</span><span style="color: #666666">,</span> <span style="color: #19177C">role</span><span style="color: #666666">=</span><span style="color: #BA2121">&#39;supplier&#39;</span> <span style="color: #BC7A00">%}</span>
-      <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;proposition-header.html&quot;</span> <span style="color: #BC7A00">%}</span>
-    <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
-  &lt;/div&gt;
-&lt;/header&gt;
-</pre></div>
-</div>
-            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;header</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;banner&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;global-header&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-global&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-logo&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-        <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">title=</span><span style="color: #BA2121">&quot;&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;logo&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;content&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/a&gt;</span>
-      <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
-    <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
-    
-      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-proposition&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;content&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#proposition-links&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;js-header-toggle menu&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Menu<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
-    <span style="color: #008000; font-weight: bold">&lt;nav</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;proposition-menu&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-      <span style="color: #008000; font-weight: bold">&lt;ul</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;proposition-links&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-        <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;https://www.gov.uk/government/collections/digital-marketplace-buyers-and-suppliers-information&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Guidance<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
-        <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
-        <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Help<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
-        <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
-         
-        <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>View your account<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
-        <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
-         
-        
-        <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;form</span> <span style="color: #7D9029">method=</span><span style="color: #BA2121">&quot;post&quot;</span> <span style="color: #7D9029">action=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-            <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;logout-button&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Log out&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
-            <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;hidden&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;csrf_token&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;token_set_for_documentation_only&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;/form&gt;</span>
-        <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
-        
-      <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
-    <span style="color: #008000; font-weight: bold">&lt;/nav&gt;</span>
-  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
-<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
-    
-  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
-<span style="color: #008000; font-weight: bold">&lt;/header&gt;</span>
-</pre></div>
-</div>
-            
-            
 
-<header role="banner" id="global-header" class="">
-  <div class="header-wrapper">
-    <div class="header-global">
-      <div class="header-logo">
-        <a href="#" title="" id="logo" class="content"></a>
-      </div>
-    </div>
-    
-      <div class="header-proposition">
-  <div class="content">
-    <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
-    <nav id="proposition-menu">
-      <ul id="proposition-links">
-        <li>
-          <a href="https://www.gov.uk/government/collections/digital-marketplace-buyers-and-suppliers-information">Guidance</a>
-        </li>
-        <li>
-          <a href="#">Help</a>
-        </li>
+        
+
+        
           
-        
-        <li>
-          <a href="#status-changes">Service status changes</a>
-        </li>
-        
-        <li>
-          <form method="post" action="#">
-            <input type="submit" class="logout-button" value="Log out" />
-            <input type="hidden" name="csrf_token" value="token_set_for_documentation_only" />
-          </form>
-        </li>
+            <li>
+              <a href="#">View your account</a>
+            </li>
+          
+          
+          <li>
+            <form method="post" action="#">
+              <input type="submit" class="logout-button" value="Log out" />
+              <input type="hidden" name="csrf_token" value="token_set_for_documentation_only" />
+            </form>
+          </li>
         
       </ul>
     </nav>
@@ -424,7 +330,225 @@
         &lt;a href=&quot;#&quot; title=&quot;&quot; id=&quot;logo&quot; class=&quot;content&quot;&gt;&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-    <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">with</span> <span style="color: #19177C">logged_in</span><span style="color: #666666">=</span><span style="color: #008000">True</span><span style="color: #666666">,</span> <span style="color: #19177C">role</span><span style="color: #666666">=</span><span style="color: #BA2121">&#39;admin&#39;</span><span style="color: #666666">,</span> <span style="color: #19177C">items</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">with</span> <span style="color: #19177C">current_user</span><span style="color: #666666">=</span><span style="color: #008000">None</span><span style="color: #666666">,</span> <span style="color: #19177C">logged_in</span><span style="color: #666666">=</span><span style="color: #008000">True</span><span style="color: #666666">,</span> <span style="color: #19177C">role</span><span style="color: #666666">=</span><span style="color: #BA2121">&#39;buyer&#39;</span> <span style="color: #BC7A00">%}</span>
+      <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;proposition-header.html&quot;</span> <span style="color: #BC7A00">%}</span>
+    <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+  &lt;/div&gt;
+&lt;/header&gt;
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;header</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;banner&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;global-header&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-global&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-logo&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">title=</span><span style="color: #BA2121">&quot;&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;logo&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;content&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/a&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-proposition&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;content&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#proposition-links&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;js-header-toggle menu&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Menu<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;nav</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;proposition-menu&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;ul</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;proposition-links&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;https://www.gov.uk/government/collections/digital-marketplace-buyers-and-suppliers-information&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Guidance<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Help<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+        
+
+        
+
+        
+          
+            <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>View your account<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+          
+          
+          <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;form</span> <span style="color: #7D9029">method=</span><span style="color: #BA2121">&quot;post&quot;</span> <span style="color: #7D9029">action=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;logout-button&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Log out&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;hidden&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;csrf_token&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;token_set_for_documentation_only&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/form&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+        
+      <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/nav&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/header&gt;</span>
+</pre></div>
+</div>
+            
+            
+
+<header role="banner" id="global-header" class="">
+  <div class="header-wrapper">
+    <div class="header-global">
+      <div class="header-logo">
+        <a href="#" title="" id="logo" class="content"></a>
+      </div>
+    </div>
+    
+      <div class="header-proposition">
+  <div class="content">
+    <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+    <nav id="proposition-menu">
+      <ul id="proposition-links">
+        <li>
+          <a href="https://www.gov.uk/government/collections/digital-marketplace-buyers-and-suppliers-information">Guidance</a>
+        </li>
+        <li>
+          <a href="#">Help</a>
+        </li>
+        
+
+        
+
+        
+          
+            <li>
+              <a href="#">View your account</a>
+            </li>
+          
+          
+          <li>
+            <form method="post" action="#">
+              <input type="submit" class="logout-button" value="Log out" />
+              <input type="hidden" name="csrf_token" value="token_set_for_documentation_only" />
+            </form>
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</div>
+    
+  </div>
+</header>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">macro</span> <span style="color: #19177C">url_for</span><span style="color: #666666">(</span><span style="color: #19177C">mocked_link_for_documentation_only</span><span style="color: #666666">)</span> <span style="color: #BC7A00">%}</span>#<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endmacro</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">set</span> <span style="color: #19177C">csrf_token_value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;token_set_for_documentation_only&#39;</span> <span style="color: #BC7A00">%}</span>
+&lt;header role=&quot;banner&quot; id=&quot;global-header&quot; class=&quot;&quot;&gt;
+  &lt;div class=&quot;header-wrapper&quot;&gt;
+    &lt;div class=&quot;header-global&quot;&gt;
+      &lt;div class=&quot;header-logo&quot;&gt;
+        &lt;a href=&quot;#&quot; title=&quot;&quot; id=&quot;logo&quot; class=&quot;content&quot;&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">with</span> <span style="color: #19177C">current_user</span><span style="color: #666666">=</span><span style="color: #008000">None</span><span style="color: #666666">,</span> <span style="color: #19177C">logged_in</span><span style="color: #666666">=</span><span style="color: #008000">True</span><span style="color: #666666">,</span> <span style="color: #19177C">role</span><span style="color: #666666">=</span><span style="color: #BA2121">&#39;supplier&#39;</span> <span style="color: #BC7A00">%}</span>
+      <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;proposition-header.html&quot;</span> <span style="color: #BC7A00">%}</span>
+    <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+  &lt;/div&gt;
+&lt;/header&gt;
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;header</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;banner&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;global-header&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-global&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-logo&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">title=</span><span style="color: #BA2121">&quot;&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;logo&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;content&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/a&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-proposition&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;content&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#proposition-links&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;js-header-toggle menu&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Menu<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;nav</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;proposition-menu&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;ul</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;proposition-links&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;https://www.gov.uk/government/collections/digital-marketplace-buyers-and-suppliers-information&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Guidance<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Help<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+        
+
+        
+
+        
+          
+            <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>View your account<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+          
+          
+          <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;form</span> <span style="color: #7D9029">method=</span><span style="color: #BA2121">&quot;post&quot;</span> <span style="color: #7D9029">action=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;logout-button&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Log out&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;hidden&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;csrf_token&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;token_set_for_documentation_only&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/form&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+        
+      <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/nav&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/header&gt;</span>
+</pre></div>
+</div>
+            
+            
+
+<header role="banner" id="global-header" class="">
+  <div class="header-wrapper">
+    <div class="header-global">
+      <div class="header-logo">
+        <a href="#" title="" id="logo" class="content"></a>
+      </div>
+    </div>
+    
+      <div class="header-proposition">
+  <div class="content">
+    <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+    <nav id="proposition-menu">
+      <ul id="proposition-links">
+        <li>
+          <a href="https://www.gov.uk/government/collections/digital-marketplace-buyers-and-suppliers-information">Guidance</a>
+        </li>
+        <li>
+          <a href="#">Help</a>
+        </li>
+        
+
+        
+
+        
+          
+          
+            <li>
+              <a href="#status-changes">Service status changes</a>
+            </li>
+          
+          <li>
+            <form method="post" action="#">
+              <input type="submit" class="logout-button" value="Log out" />
+              <input type="hidden" name="csrf_token" value="token_set_for_documentation_only" />
+            </form>
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</div>
+    
+  </div>
+</header>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">macro</span> <span style="color: #19177C">url_for</span><span style="color: #666666">(</span><span style="color: #19177C">mocked_link_for_documentation_only</span><span style="color: #666666">)</span> <span style="color: #BC7A00">%}</span>#<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endmacro</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">set</span> <span style="color: #19177C">csrf_token_value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;token_set_for_documentation_only&#39;</span> <span style="color: #BC7A00">%}</span>
+&lt;header role=&quot;banner&quot; id=&quot;global-header&quot; class=&quot;&quot;&gt;
+  &lt;div class=&quot;header-wrapper&quot;&gt;
+    &lt;div class=&quot;header-global&quot;&gt;
+      &lt;div class=&quot;header-logo&quot;&gt;
+        &lt;a href=&quot;#&quot; title=&quot;&quot; id=&quot;logo&quot; class=&quot;content&quot;&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">with</span> <span style="color: #19177C">current_user</span><span style="color: #666666">=</span><span style="color: #008000">None</span><span style="color: #666666">,</span> <span style="color: #19177C">logged_in</span><span style="color: #666666">=</span><span style="color: #008000">True</span><span style="color: #666666">,</span> <span style="color: #19177C">role</span><span style="color: #666666">=</span><span style="color: #BA2121">&#39;admin&#39;</span><span style="color: #666666">,</span> <span style="color: #19177C">items</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
       <span style="color: #666666">{</span><span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Service status changes&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#status-changes&quot;</span><span style="color: #666666">}</span>
     <span style="color: #666666">]</span> <span style="color: #BC7A00">%}</span>
       <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;proposition-header.html&quot;</span> <span style="color: #BC7A00">%}</span>
@@ -452,18 +576,136 @@
         <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
           <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Help<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
         <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+        
+
+        
+
+        
+          
+          
+            <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#status-changes&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Service status changes<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+          
+          <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;form</span> <span style="color: #7D9029">method=</span><span style="color: #BA2121">&quot;post&quot;</span> <span style="color: #7D9029">action=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;logout-button&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Log out&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;hidden&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;csrf_token&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;token_set_for_documentation_only&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/form&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+        
+      <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/nav&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/header&gt;</span>
+</pre></div>
+</div>
+            
+            
+
+<header role="banner" id="global-header" class="">
+  <div class="header-wrapper">
+    <div class="header-global">
+      <div class="header-logo">
+        <a href="#" title="" id="logo" class="content"></a>
+      </div>
+    </div>
+    
+      <div class="header-proposition">
+  <div class="content">
+    <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+    <nav id="proposition-menu">
+      <ul id="proposition-links">
+        <li>
+          <a href="https://www.gov.uk/government/collections/digital-marketplace-buyers-and-suppliers-information">Guidance</a>
+        </li>
+        <li>
+          <a href="#">Help</a>
+        </li>
+        
+
+        
           
         
+
+        
+          
+            <li>
+              <a href="#">View your account</a>
+            </li>
+          
+          
+          <li>
+            <form method="post" action="#">
+              <input type="submit" class="logout-button" value="Log out" />
+              <input type="hidden" name="csrf_token" value="token_set_for_documentation_only" />
+            </form>
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</div>
+    
+  </div>
+</header>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">macro</span> <span style="color: #19177C">url_for</span><span style="color: #666666">(</span><span style="color: #19177C">mocked_link_for_documentation_only</span><span style="color: #666666">)</span> <span style="color: #BC7A00">%}</span>#<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endmacro</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">set</span> <span style="color: #19177C">csrf_token_value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;token_set_for_documentation_only&#39;</span> <span style="color: #BC7A00">%}</span>
+&lt;header role=&quot;banner&quot; id=&quot;global-header&quot; class=&quot;&quot;&gt;
+  &lt;div class=&quot;header-wrapper&quot;&gt;
+    &lt;div class=&quot;header-global&quot;&gt;
+      &lt;div class=&quot;header-logo&quot;&gt;
+        &lt;a href=&quot;#&quot; title=&quot;&quot; id=&quot;logo&quot; class=&quot;content&quot;&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">with</span> <span style="color: #19177C">current_user</span><span style="color: #666666">={</span><span style="color: #BA2121">&#39;is_authenticated&#39;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&#39;mocked_value&#39;</span><span style="color: #666666">},</span> <span style="color: #19177C">role</span><span style="color: #666666">=</span><span style="color: #BA2121">&#39;buyer&#39;</span> <span style="color: #BC7A00">%}</span>
+      <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;proposition-header.html&quot;</span> <span style="color: #BC7A00">%}</span>
+    <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+  &lt;/div&gt;
+&lt;/header&gt;
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;header</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;banner&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;global-header&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-global&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-logo&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">title=</span><span style="color: #BA2121">&quot;&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;logo&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;content&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/a&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-proposition&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;content&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#proposition-links&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;js-header-toggle menu&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Menu<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;nav</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;proposition-menu&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;ul</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;proposition-links&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#status-changes&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Service status changes<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;https://www.gov.uk/government/collections/digital-marketplace-buyers-and-suppliers-information&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Guidance<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Help<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
         <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
         
-        <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;form</span> <span style="color: #7D9029">method=</span><span style="color: #BA2121">&quot;post&quot;</span> <span style="color: #7D9029">action=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-            <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;logout-button&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Log out&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
-            <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;hidden&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;csrf_token&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;token_set_for_documentation_only&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
-          <span style="color: #008000; font-weight: bold">&lt;/form&gt;</span>
-        <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+
+        
+          
+        
+
+        
+          
+            <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>View your account<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+          
+          
+          <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;form</span> <span style="color: #7D9029">method=</span><span style="color: #BA2121">&quot;post&quot;</span> <span style="color: #7D9029">action=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;logout-button&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Log out&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+              <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;hidden&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;csrf_token&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;token_set_for_documentation_only&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;/form&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
         
       <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;/nav&gt;</span>

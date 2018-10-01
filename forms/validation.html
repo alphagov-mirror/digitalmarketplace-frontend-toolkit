@@ -154,14 +154,14 @@
 
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">lede</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Something went wrong&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">description</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Please make it right&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">errors</span> <span style="color: #666666">=</span> <span style="color: #666666">{</span>
     <span style="color: #BA2121">&quot;example-textbox&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;input_name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;example-textbox&quot;</span><span style="color: #666666">,</span>
         <span style="color: #BA2121">&quot;question&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;What was the name of your first pet?&quot;</span>
     <span style="color: #666666">}</span>
-<span style="color: #666666">},</span>
-  <span style="color: #19177C">lede</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Something went wrong&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">description</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Please make it right&quot;</span>
+<span style="color: #666666">}</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/validation.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>

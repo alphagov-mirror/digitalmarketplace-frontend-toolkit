@@ -283,17 +283,17 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Include the technical features of your product, eg graphical workflow, remote access. (Maximum 10 words per feature. Maximum 10 features.)&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">item_name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;service feature&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Service features&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">values</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
-    <span style="color: #BA2121">&quot;One&quot;</span><span style="color: #666666">,</span>
-    <span style="color: #BA2121">&quot;Two&quot;</span><span style="color: #666666">,</span>
+    <span style="color: #BA2121">&quot;One&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;Two&quot;</span><span style="color: #666666">,</span> 
     <span style="color: #BA2121">&quot;Three&quot;</span>
 <span style="color: #666666">],</span>
   <span style="color: #19177C">optional</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
   <span style="color: #19177C">id</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;serviceFeatures-10&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">number_of_items</span> <span style="color: #666666">=</span> <span style="color: #666666">10,</span>
-  <span style="color: #19177C">item_name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;service feature&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Include the technical features of your product, eg graphical workflow, remote access. (Maximum 10 words per feature. Maximum 10 features.)&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Service features&quot;</span>
+  <span style="color: #19177C">number_of_items</span> <span style="color: #666666">=</span> <span style="color: #666666">10</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/list-entry.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -569,11 +569,11 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">id</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;serviceBenefits-20&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Answer required&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">item_name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;benefit&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">number_of_items</span> <span style="color: #666666">=</span> <span style="color: #666666">3,</span>
-  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;With an error&quot;</span>
+  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Answer required&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;With an error&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">id</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;serviceBenefits-20&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">number_of_items</span> <span style="color: #666666">=</span> <span style="color: #666666">3</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/list-entry.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -741,11 +741,11 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">id</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;serviceBenefits&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">item_name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;thing&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">number_of_items</span> <span style="color: #666666">=</span> <span style="color: #666666">3,</span>
+  <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;This has been pre-filled from a previous declaration&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;With a message&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;This has been pre-filled from a previous declaration&quot;</span>
+  <span style="color: #19177C">id</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;serviceBenefits&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">number_of_items</span> <span style="color: #666666">=</span> <span style="color: #666666">3</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/list-entry.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -961,14 +961,14 @@ eg experience working on government digital projects</p>
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;From 12th January 1973 it will no longer be legal&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;p&gt;To find the best specialist to meet your needs, you should:&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;list as many types of skills and experience as you can&lt;/li&gt;\n&lt;li&gt;be specific about the skills and experience you&#39;re looking for&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;If too many suppliers have all the essential skills and experience, you\u2019ll use the nice-to-have skills and\nexperience to exclude suppliers.&lt;/p&gt;\n\n&lt;p&gt;You must tell suppliers if you want to score individual criteria.&lt;/p&gt;\n\n&lt;p&gt;&lt;a href=\&quot;https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria\&quot;&gt;Read more about how to set evaluation criteria&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;List the skills and experience you\u2019d like the specialist to have,\neg experience working on government digital projects&lt;/p&gt;\n&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">item_name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;service feature&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Optional service features with error despite lots of question advice and hints&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">question_advice</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;p&gt;To find the best specialist to meet your needs, you should:&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;list as many types of skills and experience as you can&lt;/li&gt;\n&lt;li&gt;be specific about the skills and experience you&#39;re looking for&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;If too many suppliers have all the essential skills and experience, you\u2019ll use the nice-to-have skills and\nexperience to exclude suppliers.&lt;/p&gt;\n\n&lt;p&gt;You must tell suppliers if you want to score individual criteria.&lt;/p&gt;\n\n&lt;p&gt;&lt;a href=\&quot;https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria\&quot;&gt;Read more about how to set evaluation criteria&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;List the skills and experience you\u2019d like the specialist to have,\neg experience working on government digital projects&lt;/p&gt;\n&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">number_of_items</span> <span style="color: #666666">=</span> <span style="color: #666666">3,</span>
+  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;From 12th January 1973 it will no longer be legal&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">optional</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
   <span style="color: #19177C">id</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;serviceFeatures-30&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">item_name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;service feature&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;p&gt;To find the best specialist to meet your needs, you should:&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;list as many types of skills and experience as you can&lt;/li&gt;\n&lt;li&gt;be specific about the skills and experience you&#39;re looking for&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;If too many suppliers have all the essential skills and experience, you\u2019ll use the nice-to-have skills and\nexperience to exclude suppliers.&lt;/p&gt;\n\n&lt;p&gt;You must tell suppliers if you want to score individual criteria.&lt;/p&gt;\n\n&lt;p&gt;&lt;a href=\&quot;https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria\&quot;&gt;Read more about how to set evaluation criteria&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;List the skills and experience you\u2019d like the specialist to have,\neg experience working on government digital projects&lt;/p&gt;\n&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Optional service features with error despite lots of question advice and hints&quot;</span>
+  <span style="color: #19177C">number_of_items</span> <span style="color: #666666">=</span> <span style="color: #666666">3</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/list-entry.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>

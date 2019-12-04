@@ -155,15 +155,15 @@
 
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">street_address_line_1</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Aviation House&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">locality</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;London&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">organisation</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Government Digital Service&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">street_address_line_2</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;125 Kingsway&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">telephone</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;012345 678910&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">postcode</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;WC2B 6NH&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">organisation_type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;supplier&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">contact_name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Jo Johnston&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">email_address</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;jo@example.com&quot;</span>
+  <span style="color: #19177C">telephone</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;012345 678910&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">email_address</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;jo@example.com&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">street_address_line_1</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Aviation House&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">street_address_line_2</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;125 Kingsway&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">locality</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;London&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">postcode</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;WC2B 6NH&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/contact-details.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -263,10 +263,10 @@
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">without_spacing</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">locality</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;London&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">street_address_line_1</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Aviation House&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">postcode</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;WC2B 6NH&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">street_address_line_2</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;125 Kingsway&quot;</span>
+  <span style="color: #19177C">street_address_line_2</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;125 Kingsway&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">locality</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;London&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">postcode</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;WC2B 6NH&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/contact-details.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>

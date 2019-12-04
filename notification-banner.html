@@ -110,8 +110,8 @@
 </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;With plain text.&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;success&quot;</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;success&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;With plain text.&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/notification-banner.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -142,8 +142,8 @@
 </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;With a link&lt;/a&gt; and some plain text.&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;success&quot;</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;success&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;With a link&lt;/a&gt; and some plain text.&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/notification-banner.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -174,9 +174,9 @@
 </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">content</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;p&gt;You can now:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;look upon your work with pride&lt;/li&gt;&lt;li&gt;carry on with something else&lt;/li&gt;&lt;/ul&gt;&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;success&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;You&#39;ve successfully updated this&quot;</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;You&#39;ve successfully updated this&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">content</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;p&gt;You can now:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;look upon your work with pride&lt;/li&gt;&lt;li&gt;carry on with something else&lt;/li&gt;&lt;/ul&gt;&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/notification-banner.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -207,8 +207,8 @@
 </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;With a link&lt;/a&gt; and some plain text but without an action.&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;warning&quot;</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;warning&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;With a link&lt;/a&gt; and some plain text but without an action.&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/notification-banner.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -239,9 +239,9 @@
 </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">content</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;p&gt;This page contains:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;important information you need to know before proceeding&lt;/li&gt;&lt;li&gt;read the page to find out more&lt;/li&gt;&lt;/ul&gt;&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;warning&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Caution advised&quot;</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Caution advised&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">content</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;p&gt;This page contains:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;important information you need to know before proceeding&lt;/li&gt;&lt;li&gt;read the page to find out more&lt;/li&gt;&lt;/ul&gt;&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/notification-banner.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -272,9 +272,9 @@
 </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">action</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;button class=\&quot;button-destructive banner-action\&quot;&gt;Action button&lt;/button&gt;&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;destructive&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;With some plain text and an action.&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;destructive&quot;</span>
+  <span style="color: #19177C">action</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;button class=\&quot;button-destructive banner-action\&quot;&gt;Action button&lt;/button&gt;&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/notification-banner.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -305,9 +305,9 @@
 </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">action</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;button class=\&quot;button-destructive banner-action\&quot;&gt;Action button&lt;/button&gt;&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;destructive&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;With a link&lt;/a&gt;, some plain text and an action.&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;destructive&quot;</span>
+  <span style="color: #19177C">action</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;button class=\&quot;button-destructive banner-action\&quot;&gt;Action button&lt;/button&gt;&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/notification-banner.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -338,10 +338,10 @@
 </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">content</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;p&gt;You should only do this if:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;you know what you&#39;re doing&lt;/li&gt;&lt;li&gt;it actually makes sense&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;If all that&#39;s done, then go ahead.&lt;/p&gt;&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">action</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;button class=\&quot;button-destructive banner-action\&quot;&gt;Action button&lt;/button&gt;&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;destructive&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Are you sure?&quot;</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Are you sure?&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">content</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;p&gt;You should only do this if:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;you know what you&#39;re doing&lt;/li&gt;&lt;li&gt;it actually makes sense&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;If all that&#39;s done, then go ahead.&lt;/p&gt;&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">action</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;button class=\&quot;button-destructive banner-action\&quot;&gt;Action button&lt;/button&gt;&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/notification-banner.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -372,8 +372,8 @@
 </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;With a link&lt;/a&gt; and some plain text but without an action.&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;destructive&quot;</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;destructive&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;With a link&lt;/a&gt; and some plain text but without an action.&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/notification-banner.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -404,8 +404,8 @@
 </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;This text provides some information about what you can see on the page.&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;information&quot;</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;information&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;This text provides some information about what you can see on the page.&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/notification-banner.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -436,9 +436,9 @@
 </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">content</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;p&gt;This page contains:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;information you need to know&lt;/li&gt;&lt;li&gt;read the page to find out more&lt;/li&gt;&lt;/ul&gt;&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;information&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Some information about this page&quot;</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Some information about this page&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">content</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;p&gt;This page contains:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;information you need to know&lt;/li&gt;&lt;li&gt;read the page to find out more&lt;/li&gt;&lt;/ul&gt;&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/notification-banner.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -474,9 +474,9 @@
 </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Any existing contracts for this service remain valid. &lt;a href=\&quot;#\&quot;&gt;Here\u2019s a blog post about it&lt;/a&gt;, which you should definitely read if you are at all perturbed by this shouty blue box.&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;temporary-message&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Cloud Supplier Limited stopped providing this service on Thursday 31 December 2015.\n&quot;</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Cloud Supplier Limited stopped providing this service on Thursday 31 December 2015.\n&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Any existing contracts for this service remain valid. &lt;a href=\&quot;#\&quot;&gt;Here\u2019s a blog post about it&lt;/a&gt;, which you should definitely read if you are at all perturbed by this shouty blue box.&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/notification-banner.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -513,9 +513,9 @@
 </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">content</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;p&gt;Any existing contracts for this service remain valid. &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;#\&quot;&gt;Here\u2019s a blog post about it&lt;/a&gt;&lt;/li&gt;&lt;li&gt;read the page to find out more if you are at all perturbed by this shouty blue box.&lt;/li&gt;&lt;/ul&gt;&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;temporary-message&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Cloud Supplier Limited stopped providing this service on Thursday 31 December 2015.\n&quot;</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Cloud Supplier Limited stopped providing this service on Thursday 31 December 2015.\n&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">content</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;p&gt;Any existing contracts for this service remain valid. &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;#\&quot;&gt;Here\u2019s a blog post about it&lt;/a&gt;&lt;/li&gt;&lt;li&gt;read the page to find out more if you are at all perturbed by this shouty blue box.&lt;/li&gt;&lt;/ul&gt;&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/notification-banner.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>

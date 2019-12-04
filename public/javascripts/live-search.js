@@ -49,8 +49,10 @@ endpoint response (application/json):
     this.resultsCache = {};
 
     if(GOVUK.GDM.support.history()) {
+      this.originalState = this.$form.serializeArray();
       this.saveState();
       this.$form.on('change', 'input[type=checkbox], input[type=search], input[type=radio]', this.formChange.bind(this));
+      $(window).on('popstate', this.popState.bind(this));
 
       this.$form.find('input[type=submit]').click(
         function(e){
@@ -85,10 +87,13 @@ endpoint response (application/json):
   LiveSearch.prototype.popState = function popState(event){
     if(event.originalEvent.state){
       this.saveState(event.originalEvent.state);
-      this.updateResults();
-      this.restoreBooleans();
-      this.restoreSearchInputs();
+    } else {
+      this.saveState(this.originalState);
     }
+
+    this.restoreBooleans();
+    this.restoreSearchInputs();
+    this.updateResults();
   };
 
   LiveSearch.prototype.formChange = function formChange(e){
@@ -98,7 +103,7 @@ endpoint response (application/json):
       pageUpdated = this.updateResults();
       pageUpdated.done(
         function(){
-          var newPath = window.location.pathname + "?" + $.param(this.state);
+          var newPath = window.location.origin + window.location.pathname + "?" + $.param(this.state);
           history.pushState(this.state, '', newPath);
           if (GOVUK.analytics && GOVUK.analytics.trackPageview) {
             GOVUK.analytics.trackPageview(newPath);
@@ -140,7 +145,7 @@ endpoint response (application/json):
         liveSearch.cache(this.searchState, response);
         liveSearch.displayFilterResults(response, this.searchState);
 
-      }).error(function(response){
+      }).fail(function(response){
         liveSearch.showErrorIndicator();
 
       })
@@ -161,7 +166,8 @@ endpoint response (application/json):
   }
 
   LiveSearch.prototype.displayFilterResults = function displayFilterResults(response, state) {
-    if(state == $.param(this.state)) {
+    // The !(state === "") is required for browser versions which trigger the popstate event on first pageload
+    if(state == $.param(this.state) && !(state === "")) {
       for (var blockToReplace in response) {
         this.replaceBlock(response[blockToReplace]['selector'], response[blockToReplace]['html']);
       }
